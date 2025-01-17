@@ -1,0 +1,23 @@
+local state = false
+
+function main()
+	repeat wait(0) until isSampAvailable()
+	sampRegisterChatCommand('vell', function()
+		state = not state
+		if state then
+			lua_thread.create(function()
+				while state do
+					wait(100)
+					local _, myid = sampGetPlayerIdByCharHandle(PLAYER_PED)
+					local hp = sampGetPlayerHealth(myid)
+					if hp < 100 then
+						setCharHealth(PLAYER_PED, hp + 2)
+						printStringNow('regeneration... ['..hp..' >> '..(hp + 2)..']', 500)
+					end
+				end
+			end)
+			return sampAddChatMessage('on', -1) end
+		return sampAddChatMessage('off', -1)
+	end)
+	wait(-1)
+end
