@@ -140,7 +140,7 @@ https://chat.whatsapp.com/IH0whubjkttIDWVSvWOLW0
    "👟MENU SEPATU",
    "😎CREATOR SCRIPT😎",
      "🛑 EXIT SCRIPT 🛑",
-}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ ScriptFree To Member Community \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
 gg.toast("SCRIPT VELLIX_AO   ")
     if MENU == nil then   
     else
@@ -1032,7 +1032,7 @@ VIP1 = gg.choice({
         "🔥 EMOTE THOMSON 2JT 🔥",   
         "🔥 EMOTE FAMAS 2JT 🔥",   
        "       🔙KELUAR🔙"
-}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ ScriptFree To Member Community \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
 if VIP1 == nil then   
   else
    if VIP1 == 1 then    
@@ -1487,7 +1487,7 @@ VIP2 = gg.choice({
         "            ✖️ OFF ✖️",   
         "🔥 LOOK CHANGGER NARUTO 🔥",   
         "            ✖️ OFF ✖️",   
-        "🔥 LOOK CHANGGER LAST PARADOX 🔥",    
+        "?? LOOK CHANGGER LAST PARADOX 🔥",    
         "            ✖️ OFF ✖️",   
         "🔥 LOOK CHANGGER FROSTFIRE 🔥",   
         ".           ✖️ OFF ✖️",   
@@ -1500,7 +1500,7 @@ VIP2 = gg.choice({
         "🔥 LOOK CHANGGER RAMPAGE 🔥",   
         "            ✖️ OFF ✖️",   
         "           🔙KELUAR🔙"
-}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ ScriptFree To Member Community \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
 if VIP2 == nil then   
   else
    if VIP2 == 1 then    
@@ -1929,7 +1929,7 @@ function B18()
       "🥶SUPER EMOTE",
       "OFF",
         "⬅️KELUAR⬅️"
-}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ ScriptFree To Member Community \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
     gg.toast("VELLIX_AO ")
     if FF == nil then
     else
@@ -2020,7 +2020,7 @@ hair = gg.choice({
 "😹FFWS BUNDLE 😹",
 "🥲OFF🥲",
 "KELUAR"
-}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ ScriptFree To Member Community \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
 gg.toast("SCRIPT VELLIX_AO   ")
 if hair == nil then else
 if hair == 1 then hair1() end   
@@ -2597,7 +2597,7 @@ mask = gg.choice({
 "🫠FFWS BUNDLE 😒",
 "😔OFF😔",
 "💀END💀"
-}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ ScriptFree To Member Community \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
 gg.toast("SCRIPT VELLIX_AO   ")
 if mask == nil then else
 if mask == 1 then mask1() end   
@@ -3073,7 +3073,7 @@ cloth = gg.choice({
 "👍FFWS BUNDLE 😾",
 "OFF",
 "KELUAR"
-}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ ScriptFree To Member Community \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
 gg.toast("SCRIPT VELLIX_AO   ")
 if cloth == nil then else
 if cloth == 1 then cloth1() end   
@@ -3869,7 +3869,7 @@ pant = gg.choice({
                  "😂FFWS BUNDLE 😂",
                  "OFF",
     "KELUAR"
-}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ ScriptFree To Member Community \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
 gg.toast("SCRIPT VELLIX_AO   ")
 if pant == nil then else
 if pant == 1 then pant1() end   
@@ -4527,7 +4527,7 @@ shoe = gg.choice({
     "😒FFWS 😒",
      "OFF",
   "KELUAR"
-}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ ScriptFree To Member Community \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
 gg.toast("SCRIPT VELLIX_AO   ")
 if shoe == nil then else
 if shoe == 1 then shoe1() end   
