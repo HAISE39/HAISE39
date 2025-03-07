@@ -1,0 +1,4888 @@
+gg.setVisible(false)
+modbyfami = os.date ('           ⚡MODMENU BY VELLIX⚡\
+\
+           ❦ ════ •⊰❂ - ❂⊱• ════ ❦\
+\
+📆Dᴀᴛᴇ📆 : %Y/%m/%d\
+\
+🕛Tɪᴍᴇ🕛 : %H:%M:%S\
+\
+⏳Exᴘɪʀᴇᴅ Sᴄʀɪᴘᴛ⏳ : 0000/00/00\
+\
+           ❦ ════ •⊰❂ - ❂⊱• ════ ❦')
+gg.alert(modbyfami)
+gg.setVisible(true)
+
+gg.setVisible(false)
+gg.alert("©Hack\n©YouTube : VELLIX_AO\n©Fb: Kurol watu\n©Subscribe Channel Free")
+local revert = nil
+function WriteSignatures(original,ViRuS) gg.setRanges(16384) gg.searchNumber("h"..original) gg.getResults(9999) gg.editAll("h"..ViRuS,1) gg.clearResults() end
+function split(szFullString, szSeparator)  local nFindStartIndex = 1  local nSplitIndex = 1  local nSplitArray = {}  while true do  local nFindLastIndex = string.find (szFullString, szSeparator, nFindStartIndex)  if not nFindLastIndex then  nSplitArray[nSplitIndex] =  string.sub(szFullString, nFindStartIndex, string.len (szFullString))  break end  nSplitArray[nSplitIndex] = string.sub (szFullString, nFindStartIndex, nFindLastIndex - 1)  nFindStartIndex = nFindLastIndex + string.len (szSeparator)  nSplitIndex = nSplitIndex + 1 end return  nSplitArray end  function xgxc(szpy, qmxg)  for x = 1, #(qmxg) do  xgpy = szpy + qmxg[x]["offset"]  xglx = qmxg[x]["type"]  xgsz = qmxg[x]["value"]  xgdj = qmxg[x]["freeze"]  if xgdj == nil or xgdj == "" then  gg.setValues({[1]  = {address = xgpy, flags = xglx, value = xgsz}})  else  gg.addListItems({[1]  = {address = xgpy, flags = xglx,  freeze = xgdj, value = xgsz}}) end  xgsl = xgsl + 1 xgjg = true end end  function xqmnb(qmnb)  gg.clearResults()  gg.setRanges(qmnb[1]["memory"])  gg.searchNumber(qmnb[3]["value"], qmnb[3]["type"])  if gg.getResultCount() == 0 then  gg.toast(qmnb[2]["name"] .. "开启失败")  else  gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"])  gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"])  if gg.getResultCount() == 0 then  gg.toast(qmnb[2]["name"] .. "开启失败")  else          sl = gg.getResults(999999)  sz = gg.getResultCount()          xgsl = 0 if sz > 999999 then  sz = 999999 end for i = 1, sz do  pdsz = true for v = 4, #(qmnb) do if  pdsz == true then  pysz = {} pysz[1]  = {} pysz[1].address  = sl[i].address + qmnb[v]["offset"] pysz[1].flags  = qmnb[v]["type"]  szpy = gg.getValues(pysz)  pdpd = qmnb[v]["lv"] .. ";" .. szpy[1].value szpd  = split(pdpd, ";") tzszpd  = szpd[1] pyszpd = szpd[2]  if tzszpd == pyszpd then  pdjg = true pdsz = true else  pdjg = false pdsz = false end end end if  pdjg == true then szpy  = sl[i].address xgxc(szpy, qmxg) end end  if xgjg == true then  gg.toast(qmnb[2]["name"] .. "开启成功,共修改" .. xgsl .. "条数据")  else  gg.toast(qmnb[2]["name"] .. "开启失败")  end  end  end  end
+gg.setVisible(false)
+local AobSearch = "h 02 01 02 00 02 01 00 02"
+local AobReplace = "h 01 03 00 04 04 00 00 00"
+WriteSignatures(AobSearch,AobReplace)
+local AobSearch = "h 01 01 02 00 02 01 04 01"
+local AobReplace = "h 01 03 00 04 04 00 00 00"
+WriteSignatures(AobSearch,AobReplace)
+local AobSearch = "h 0A 38 03 00 58 04 E4 02"
+local AobReplace = "h 01 03 A1 05 04 7C B7 02"
+WriteSignatures(AobSearch,AobReplace)
+local AobSearch = "h 01 03 00 04 04 00 00 00"
+local AobReplace = "h 01 03 A1 05 04 7C B7 02"
+WriteSignatures(AobSearch,AobReplace)
+local AobSearch = "h 00 00 00 00 01 02 00 04"
+local AobReplace = "h 00 00 00 00 01 03 00 04"
+WriteSignatures(AobSearch,AobReplace)
+gg["clearResults"]()
+  os["remove"](gg["EXT_STORAGE"] .. "/Android/data/com.dts.freefireth/files/reportnew.db", gg["LOAD_APPEND"])
+  os["remove"](gg["EXT_STORAGE"] .. "/Android/data/com.dts.freefireth/files/ymrtc_log.txt", gg["LOAD_APPEND"])
+  os["remove"]("/storage/emulated/0/Android/data/com.dts.freefireth/files/il2cpp/Metadata/global-metadata.dat")
+  os["remove"]("/storage/emulated/0/Android/data/com.dts.freefireth/files/il2cpp/Resources/mscorlib.dll-resources.dat")
+  os["remove"]("/Android/data/com.dts.freefireth/files/il2cpp/etc/mono/mconfig/config.xml")
+  os["remove"](gg["EXT_STORAGE"] .. "/Android/data/com.dts.freefireth/files/reportnew.db", gg["LOAD_APPEND"])
+  os["remove"](gg["EXT_STORAGE"] .. "/Android/data/com.dts.freefireth/files/ymrtc_log.txt", gg["LOAD_APPEND"])
+  os["remove"](gg["EXT_STORAGE"] .. "/Android/data/com.dts.freefireth/files/Free Fire Screenshot.png", gg["LOAD_APPEND"])
+  os["remove"](gg["EXT_STORAGE"] .. "/Android/data/com.dts.freefireth/files/GameProtector3", gg["LOAD_APPEND"])
+  os["remove"](" /storage/emulated/0/Android/data/com.dts.freefiremax/files/contentcache/Optional/android/optionalavatarres/gameassetbundles")
+  os["remove"](" /storage/emulated/0/Android/data/com.dts.freefiremax/files/contentcache/Optional/android/gameassetbundles")
+  os["remove"]("/storage/emulated/0/Android/data/com.dts.freefireth/files/GameProtector3")
+  os["remove"]("/storage/emulated/0/Android/data/com.dts.freefireth/files/reportnew.db")
+  os["remove"]("/storage/emulated/0/Android/data/com.dts.freefireth/files/ymrtc_log.txt")
+  os["remove"]("/storage/emulated/0/Android/data/com.dts.freefireth/files/Free Fire Screenshot.png")
+  os["remove"]("/storage/emulated/0/com.garena.msdk/guest100067.dat")
+  os["remove"]("/storage/emulated/0/Android/data/com.dts.freefireth/files/Free Fire Screenshot.png")
+  os["remove"]("/storage/emulated/0/Android/data/com.ludashi.superboost/files/crashinfo")
+  os["remove"]("/storage/emulated/0/Android/data/com.ludashi.superboost/files/Movies")
+  os["remove"]("/storage/emulated/0/Android/data/com.ludashi.superboost/files")
+  os["remove"]("/storage/emulated/0/Android/data/com.ludashi.superboost")
+function setvalue(address,flags,value) 
+local tt={} tt[1]={} tt[1].address=address tt[1].flags=flags tt[1].value=value 
+gg.setValues(tt) end local n, startAddress, endAddress = nil, 0, 0 local function name(lib) if n == lib then return startAddress, endAddress end local ranges = gg.getRangesList(lib or 'libil2cpp.so') for i, v in ipairs(ranges) do if v.state == "Xa" then startAddress = v.start endAddress = ranges[#ranges]['end'] break end end return startAddress, endAddress end local function SetValue(libname, offset, hex) name(libname) local t, total = {}, 0 for h in string.gmatch(hex, "%S%S") do  table.insert(t, { address = startAddress + offset + total,flags = gg.TYPE_BYTE,value = h .. "r"    }) total = total + 1 end local res = gg.setValues(t) if type(res) ~= 'string' then return true else gg.alert(res) return false end end
+gg.toast("😎SCRIPT FREE FIRE 😎")
+gg.sleep(2000)
+gg.toast(os.date(" JAM: %X"))
+gg.sleep(2000)
+gg.toast(os.date(" TANGGAL: %d %b %Y"))
+gg.sleep("2500")
+gg.alert("👑 SCRIPT BY: VELLIX_AO 👑","[ LANJUT ]")
+gg.alert([[
+━━━•✠•══≪❪ ᵔᴥᵔ ❫≫══•✠•━━━
+ঔৣ͜͡➳ SCRIPT FREE FIRE😎
+━━━•✠•══≪❪ ᵔᴥᵔ ❫≫══•✠•━━━
+]]) 
+gg.alert([[
+━━━•✠•══≪❪ ᵔᴥᵔ ❫≫══•✠•━━━
+🗒️FREE TO MEMBER COMMUNITY🗒️
+━━━•✠•══≪❪ ᵔᴥᵔ ❫≫══•✠•━━━
+]]) 
+gg.alert([[
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+🌐JOIN MY COMMUNITY🌐
+https://chat.whatsapp.com/IH0whubjkttIDWVSvWOLW0
+▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
+]])
+    gg.toast("■□□□□□□□□□10%")
+    gg.sleep(200)
+    gg.toast("■□□□□□□□□□10%")
+    gg.sleep(200)
+    gg.toast("■■□□□□□□□□20%")
+    gg.sleep(200)
+    gg.toast("■■□□□□□□□□20%")
+    gg.sleep(200)
+    gg.toast("■■■□□□□□□□30%")
+    gg.sleep(200)
+    gg.toast("■■■□□□□□□□30%")
+    gg.sleep(200)
+    gg.toast("■■■■□□□□□□40%")
+    gg.sleep(200)
+    gg.toast("■■■■□□□□□□40%")
+    gg.sleep(200)
+    gg.toast("■■■■■□□□□□50%")
+    gg.sleep(200)
+    gg.toast("■■■■■□□□□□50%")
+    gg.sleep(200)
+    gg.toast("■■■■■■□□□□60%")
+    gg.sleep(200)
+    gg.toast("■■■■■■□□□□60%")
+    gg.sleep(200)
+    gg.toast("■■■■■■■□□□70%")
+    gg.sleep(200)
+    gg.toast("■■■■■■■□□□70%")
+    gg.sleep(200)
+    gg.toast("■■■■■■■■□□80%")
+    gg.sleep(200)
+    gg.toast("■■■■■■■■□□80%")
+    gg.sleep(200)
+    gg.toast("■■■■■■■■■□90%")
+    gg.sleep(200)
+    gg.toast("■■■■■■■■■□90%")
+    gg.sleep(200)
+    gg.toast("■■■■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓LOADING SUKSES FULL✓ ")
+    gg.alert([[
+════════════════════════
+ ❗ LOADING SUKSES FULL❗
+════════════════════════
+]])
+    gg.toast("✓LOADING SUKSES FULL✓ ")
+ function HOME()
+    MENU = gg.choice({
+   "📛MENU EMOTE NEW📛 ", 
+   "💖MENU EMOTE 40JT💖", 
+   "🐼MENU LOOCK CHANGGER🐼", 
+   "🔥MENU SUPER EMOTE🔥", 
+   "🎭MENU TOPI", 
+   "👀MENU MASKER",
+   "👕MENU BAJU",
+   "👖MENU CELANA",
+   "👟MENU SEPATU",
+   "😎CREATOR SCRIPT😎",
+     "🛑 EXIT SCRIPT 🛑",
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+gg.toast("SCRIPT VELLIX_AO   ")
+    if MENU == nil then   
+    else
+      if MENU == 1 then   
+        MENU1()
+      end
+      if MENU == 2 then   
+        MENU2()
+      end
+      if MENU == 3 then   
+        MENU3()
+      end
+      if MENU == 4 then   
+        MENU4()
+      end
+      if MENU == 5 then   
+        MENU5()
+      end
+      if MENU == 6 then   
+        MENU6()
+      end
+   if MENU == 7 then
+      MENU7()
+      end
+   if MENU == 8 then
+      MENU8()    
+      end
+    if MENU == 9 then
+      MENU9()    
+      end   
+   if MENU == 10 then
+      Channel()  
+     end
+   if MENU == 11 then
+      LOBBY() 
+      end
+    end
+  LuaLibraryTool = -1
+end
+  
+function MENU1()
+VIP = gg.choice({
+        "🆕 EMOTE NEW 1 🆕",   
+        "🆕 EMOTE NEW 2 🆕",   
+        "🆕 EMOTE NEW 3 🆕",   
+        "🆕 EMOTE NEW 4 🆕",   
+        "🆕 EMOTE NEW 5 🆕",   
+        "🆕 EMOTE NEW 6 🆕",   
+        "🆕 EMOTE NEW 7 🆕",    
+        "🆕 EMOTE NEW 8 🆕",   
+        "🆕 EMOTE NEW 9 🆕",   
+        "🆕 EMOTE NEW 10 🆕",   
+        "🆕 EMOTE NEW 11 🆕",   
+        "🆕 EMOTE NEW 12 🆕",   
+        "🆕 EMOTE NEW 13 🆕",   
+        "🆕 EMOTE NEW 14 🆕",   
+        "🆕 EMOTE NEW 15 🆕",   
+        "🆕 EMOTE NEW 16 🆕",   
+        "🆕 EMOTE NEW 17 🆕",   
+        "🆕 EMOTE NEW 18 🆕",   
+        "🆕 EMOTE NEW 19 🆕",   
+        "🆕 EMOTE NEW 20 🆕",   
+        "🆕 EMOTE NEW 21 🆕",   
+        "🆕 EMOTE NEW 22 🆕",   
+        "🆕 EMOTE NEW 23 🆕",   
+        "🆕 EMOTE NEW 24 🆕",   
+        "🆕 EMOTE NEW 25 🆕",   
+        "🆕 EMOTE NEW 26 🆕",   
+        "🆕 EMOTE NEW 27 🆕",   
+        "🆕 EMOTE NEW 28 🆕",   
+        "🆕 EMOTE NEW 29 🆕",   
+        "🆕 EMOTE NEW 30 🆕",   
+        "🆕 EMOTE NEW 31 🆕",   
+        "🆕 EMOTE NEW 32 🆕",   
+        "🆕 EMOTE NEW 33 🆕",   
+        "🆕 EMOTE NEW 34 🆕",   
+       "     🔙KELUAR🔙"
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ ScriptFree To Member Community\n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+if VIP == nil then   
+  else
+   if VIP == 1 then    
+      VIP1()
+     end
+   if VIP == 2 then    
+      VIP2()
+     end
+   if VIP == 3 then    
+      VIP3()
+     end
+   if VIP == 4 then    
+      VIP4()
+     end
+   if VIP == 5 then    
+      VIP5()
+      end
+   if VIP == 6 then    
+      VIP6()
+      end
+   if VIP == 7 then    
+      VIP7()
+      end
+   if VIP == 8 then    
+      VIP8()    
+      end
+    if VIP == 9 then    
+      VIP9()    
+      end   
+   if VIP == 10 then    
+      VIP10()  
+     end
+     if VIP == 11 then    
+     VIP11()
+     end
+   if VIP == 12 then    
+      VIP12()
+      end
+   if VIP == 13 then    
+      VIP13() 
+      end
+   if VIP == 14 then    
+      VIP14()
+      end
+   if VIP == 15 then    
+      VIP15()
+      end
+   if VIP == 16 then    
+      VIP16()
+      end
+   if VIP == 17 then    
+      VIP17()
+      end
+   if VIP == 18 then    
+      VIP18()    
+      end
+   if VIP == 19 then    
+      VIP19()
+      end
+   if VIP == 20 then    
+      VIP20()  
+     end
+   if VIP == 21 then    
+      VIP21()
+      end
+   if VIP == 22 then    
+      VIP22()
+      end
+   if VIP == 23 then    
+      VIP23()    
+      end
+   if VIP == 24 then    
+      VIP24()
+      end
+   if VIP == 25 then    
+      VIP25()  
+     end
+   if VIP == 26 then    
+      VIP26()
+      end
+   if VIP == 27 then    
+      VIP27()
+      end
+   if VIP == 28 then    
+      VIP28()    
+      end
+   if VIP == 29 then    
+      VIP29()
+      end
+   if VIP == 30 then    
+      VIP30()  
+     end
+     if VIP == 31 then    
+     VIP31()
+     end
+   if VIP == 32 then    
+      VIP32()
+      end
+   if VIP == 33 then    
+      VIP33() 
+      end
+   if VIP == 34 then    
+      VIP34()
+      end
+     if VIP == 35 then   
+     HOME() 
+      end
+    end
+  LuaLibraryTool = -1
+end
+
+function VIP1() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048015", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP2() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909047001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP3() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909047004", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+ 
+function VIP4() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP5() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048002", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP6() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048003", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP7() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048004", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP8() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048005", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP9() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048006", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP10() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048007", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP11() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048008", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+ 
+function VIP12() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048009", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP13() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048010", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP14() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048011", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP15() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048012", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP16() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048013", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP17() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048014", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP18() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP19() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048007", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP20() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048010", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP21() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048012", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP22() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048013", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP23() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+ 
+function VIP24() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048002", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP25() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048003", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP26() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048004", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP27() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048005", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP28() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048006", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP29() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048008", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+  
+function VIP30() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048009", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP31() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048011", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP32() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048014", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP33() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909048015", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+
+function VIP34() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909547001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE NEW ON✓  ")
+  end
+  
+function MENU2()
+VIP1 = gg.choice({
+        "🔥 EMOTE G18 2JT 🔥",   
+        "🔥 EMOTE M1887 2JT 🔥",   
+        "🔥 EMOTE AK 2JT 🔥",   
+        "🔥 EMOTE SCAR 2JT 🔥",   
+        "🔥 EMOTE UMP 2JT 🔥",   
+        "🔥 EMOTE XM8 2JT 🔥",   
+        "🔥 EMOTE MP5 2JT 🔥",    
+        "🔥 EMOTE M4A1 2JT 🔥",   
+        "🔥 EMOTE TINJU 2JT 🔥",   
+        "🔥 EMOTE AN94 2JT 🔥",   
+        "🔥 EMOTE M1014 2JT 🔥",   
+        "🔥 EMOTE MP40 2JT 🔥",   
+        "🔥 EMOTE GROZA 2JT 🔥",   
+        "🔥 EMOTE WOODPACKER 2JT 🔥",   
+        "🔥 EMOTE PARAFAL 2JT 🔥",   
+        "🔥 EMOTE M1014 2JT 🔥",   
+        "🔥 EMOTE MP40 2JT 🔥",   
+        "🔥 EMOTE THOMSON 2JT 🔥",   
+        "🔥 EMOTE FAMAS 2JT 🔥",   
+       "       🔙KELUAR🔙"
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+if VIP1 == nil then   
+  else
+   if VIP1 == 1 then    
+      A1()
+     end
+   if VIP1 == 2 then    
+      A2()
+     end
+   if VIP1 == 3 then    
+      A3()
+     end
+   if VIP1 == 4 then    
+      A4()
+     end
+   if VIP1 == 5 then    
+      A5()
+      end
+   if VIP1 == 6 then    
+      A6()
+      end
+   if VIP1 == 7 then    
+      A7()
+      end
+   if VIP1 == 8 then    
+      A8()    
+      end
+    if VIP1 == 9 then    
+      A9()    
+      end   
+   if VIP1 == 10 then    
+      A10()  
+     end
+     if VIP1 == 11 then    
+     A11()
+     end
+   if VIP1 == 12 then    
+      A12()
+      end
+   if VIP1 == 13 then    
+      A13() 
+      end
+   if VIP1 == 14 then    
+      A14()
+      end
+   if VIP1 == 15 then    
+      A15()
+      end
+   if VIP1 == 16 then    
+      A16()
+      end
+   if VIP1 == 17 then    
+      A17()
+      end
+   if VIP1 == 18 then    
+      A18()    
+      end
+   if VIP1 == 19 then    
+      A19()
+      end
+     if VIP1 == 20 then   --EndScript
+     HOME() 
+      end
+    end
+  LuaLibraryTool = -1
+end
+
+function A1() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909038012", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A2() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909035007", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A3() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909000063", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+ 
+function A4() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909000068", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A5() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909000098", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A6() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909000085", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A7() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909033002", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A8() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909033001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A9() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909037011", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A10() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909035012", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A11() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909000081", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+ 
+function A12() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909000075", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A13() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909041005", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A14() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909042008", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A15() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909045001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A16() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909039011", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A17() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909040010", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A18() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909038010", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function A19() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909000001~909048015", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("909000090", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+  
+function MENU3()
+VIP2 = gg.choice({
+        "🔥 LOOK CHANGGER MIDNIGHT ACE 🔥",   
+        "            ✖️ OFF ✖️",   
+        "🔥 LOOK CHANGGER AURORA 🔥",   
+        "            ✖️ OFF ✖️",   
+        "🔥 LOOK CHANGGER NARUTO 🔥",   
+        "            ✖️ OFF ✖️",   
+        "🔥 LOOK CHANGGER LAST PARADOX 🔥",    
+        "            ✖️ OFF ✖️",   
+        "🔥 LOOK CHANGGER FROSTFIRE 🔥",   
+        ".           ✖️ OFF ✖️",   
+        "🔥 LOOK CHANGGER SCORPIO 🔥",   
+        "            ✖️ OFF ✖️",   
+        "🔥 LOOK CHANGGER DEVIL TRIGGER🔥",   
+        ".           ✖️ OFF ✖️",   
+        "🔥 LOOK CHANGGER CANNIBAL HAVOC 🔥",   
+        "            ✖️ OFF ✖️",   
+        "🔥 LOOK CHANGGER RAMPAGE 🔥",   
+        "            ✖️ OFF ✖️",   
+        "           🔙KELUAR🔙"
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+if VIP2 == nil then   
+  else
+   if VIP2 == 1 then    
+      B1()
+     end
+   if VIP2 == 2 then    
+      B2()
+     end
+   if VIP2 == 3 then    
+      B3()
+     end
+   if VIP2 == 4 then    
+      B4()
+     end
+   if VIP2 == 5 then    
+      B5()
+      end
+   if VIP2 == 6 then    
+      B6()
+      end
+   if VIP2 == 7 then    
+      B7()
+      end
+   if VIP2 == 8 then    
+      B8()    
+      end
+    if VIP2 == 9 then    
+      B9()    
+      end   
+   if VIP2 == 10 then    
+      B10()  
+     end
+     if VIP2 == 11 then    
+     B11()
+     end
+   if VIP2 == 12 then    
+      B12()
+      end
+   if VIP2 == 13 then    
+      B13() 
+      end
+   if VIP2 == 14 then    
+      B14()
+      end
+   if VIP2 == 15 then    
+      B15()
+      end
+   if VIP2 == 16 then    
+      B16()
+      end
+   if VIP2 == 17 then    
+      B17()
+      end
+   if VIP2 == 18 then    
+      B18()    
+      end
+     if VIP2 == 19 then   --EndScript
+     HOME() 
+      end
+    end
+  LuaLibraryTool = -1
+end
+
+function B1() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914000001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914048001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B2() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914048001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914000001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B3() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914000001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914047002", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+ 
+function B4() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914047002", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914000001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B5() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914000001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914047001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B6() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914047001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914000001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B7() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914000001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914044001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B8() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914044001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914000001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B9() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914000001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914042001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B10() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914042001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914000001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B11() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914000001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914039001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+ 
+function B12() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914039001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914000001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B13() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914000001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914038001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B14() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914038001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914000001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B15() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914000001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914000003", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B16() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914000003", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914000001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B17() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914000001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914000002", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+
+function B18() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("914000002", gg.TYPE_DWORD)
+    gg.getResults(100000)
+    gg.editAll("914000001", gg.TYPE_DWORD)
+    gg.clearResults()
+    gg.toast("■□□□□□□10%  ")
+    gg.sleep(200)
+    gg.toast("■■□□□□□20%  ")
+    gg.sleep(200)
+    gg.toast("■■■■□□□60%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■□90%  ")
+    gg.sleep(200)
+    gg.toast("■■■■■■■100%")
+    gg.sleep(200)
+    gg.toast("✓EMOTE 2JT ON✓  ")
+  end
+  
+  function MENU4()
+    FF = gg.choice({
+      "🥶SUPER EMOTE",
+      "OFF",
+        "⬅️KELUAR⬅️"
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+    gg.toast("VELLIX_AO ")
+    if FF == nil then
+    else
+      if FF == 1 then
+        D1()
+      end
+      if FF == 2 then
+        D2()
+      end
+      if FF == 3 then
+        HOME()
+      end
+    end
+    LuDLibrDryTool = -1
+  end
+  
+  
+  function D1()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("900000016", gg.TYPE_DWORD)
+    gg.getResults("100000")
+    gg.editAll("909547001", gg.TYPE_DWORD)
+    os.remove("/storage/emulated/0/Android/data/com.dts.freefiremax/files/contentcache/Optional/android/gameassetbundles")
+    os.remove("/storage/emulated/0/Android/data/com.dts.freefiremax/files/contentcache/Optional/android/optionalavatarres/gameassetbundles")
+    gg.clearResults()   
+    gg.toast("✓SUPER EMOTE ON✓")
+  end
+  
+  function D2()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("909547001", gg.TYPE_DWORD)
+    gg.getResults("100000")
+    gg.editAll("900000016", gg.TYPE_DWORD)
+    os.remove("/storage/emulated/0/Android/data/com.dts.freefiremax/files/contentcache/Optional/android/gameassetbundles")
+    os.remove("/storage/emulated/0/Android/data/com.dts.freefiremax/files/contentcache/Optional/android/optionalavatarres/gameassetbundles")
+    gg.clearResults()   
+    gg.toast("✖️SUPER EMOTE OFF✖️")
+  end
+
+  function MENU5()
+hair = gg.choice({
+"🧢SEASON 2 🧢",   
+"OFF",    
+"🎓XD CAPS🎓",   
+"OFF",   
+"🙇‍♂️PURPLE SHADE HAIR🙇‍♂️",   
+"OFF",   
+"🤍WHITE COBRA HAIR🤍",   
+"OFF",   
+"💛YELLOW COBRA HAIR💛",   
+"OFF",   
+"💙BLUE COBRA HAIR💙",   
+"OFF",   
+"💜COBRA HAIR💜",   
+"OFF",   
+"😼CAT INCUBATOR HAIR😼",
+"OFF",   
+"🤤ANGEL HAiR🤤",
+"OFF",   
+"👦NEW HAIR 👦",   
+"OFF",   
+" 🌚FEMALE HAIR🌚",
+"OFF",
+"🥵NEW HAIR FEMALE 🥵",
+"OFF",
+"💀OP HAIR 💀",
+"OFF",
+"🥵 RAMPAGE BUNDLE 🥵",
+"OFF",
+"🧟 ZOMBIE SAMURAI 🧟", 
+"OFF",
+"😭 WHITE HAIR 😂",
+"OFF",
+"🫠NEW MALS🫠",
+"OFF",
+"🫠NEW MALS🫠",
+"OFF",
+"🫠NEW MALS🫠",
+"OFF",
+"🐰 BUNNY CDI🐰",
+"OFF",
+"😬SHANTO ER BOWR SAMA😔",
+"OFF",
+"😒 HAIR XDI NAH😒",
+"OFF",
+"🫡SUNAN RE XUDI🙁",
+"OFF",
+"😹FFWS BUNDLE 😹",
+"🥲OFF🥲",
+"KELUAR"
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+gg.toast("SCRIPT VELLIX_AO   ")
+if hair == nil then else
+if hair == 1 then hair1() end   
+if hair == 2 then hair2() end   
+if hair == 3 then hair3() end   
+if hair == 4 then hair4() end   
+if hair == 5 then hair5() end   
+if hair == 6 then hair6() end   
+if hair == 7 then hair7() end   
+if hair == 8 then hair8() end   
+if hair == 9 then hair9() end   
+if hair == 10 then hair10() end   
+if hair == 11 then hair11() end   
+if hair == 12 then hair12() end   
+if hair == 13 then hair13() end   
+if hair == 14 then hair14() end   
+if hair == 15 then hair15() end   
+if hair == 16 then hair16() end   
+if hair == 17 then hair17() end   
+if hair == 18 then hair18() end   
+if hair == 19 then hair19() end   
+if hair == 20 then hair20() end   
+if hair == 21 then hair21() end   
+if hair == 22 then hair22() end   
+if hair == 23 then hair23() end   
+if hair == 24 then hair24() end   
+if hair == 25 then hair25() end 
+if hair == 26 then hair26() end 
+if hair == 27 then hair27() end   
+if hair == 28 then hair28() end 
+if hair == 29 then hair29() end 
+if hair == 30 then hair30() end 
+if hair == 31 then hair31() end 
+if hair == 32 then hair32() end
+if hair == 33 then hair33() end 
+if hair == 34 then hair34() end
+if hair == 35 then hair35() end
+if hair == 36 then hair36() end
+if hair == 37 then hair37() end
+if hair == 38 then hair38() end
+if hair == 39 then hair39() end
+if hair == 40 then hair40() end
+if hair == 41 then hair41() end
+if hair == 42 then hair42() end
+if hair == 43 then hair43() end
+if hair == 44 then hair44() end
+if hair == 45 then hair45() end
+if hair == 46 then hair46() end
+if hair == 47 then hair47() end
+if hair == 48 then hair48() end
+if hair == 49 then
+        HOME()
+      end
+    end
+    LuaLibraryTool = -1
+  end
+
+function hair1()   
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000028",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair2()   
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000028", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair3()   
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000126",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair4()   
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000126", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair5()   
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000303",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair6()   
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000303", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+ 
+function hair7() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000868",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair8() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000868", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair9() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000869",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair10() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000869", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair11() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000870",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair12() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000870", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair13() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000871",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair14() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000871", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair15() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000663",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair16() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000663", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair17() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000626",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair18() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000626", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair19() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000632",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair20() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000632", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair21() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000200",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair22() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000200", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair23() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000245",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair24() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000245", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair25() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000559",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair26() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000559", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair27() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211034053",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair28() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211034053", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair29() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000125",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair30() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000125", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair31() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000598",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair32() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000598", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair33() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000259",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair34() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000259", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair35() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000589",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair36() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000589", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair37() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000562",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair38() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000562", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair39() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000551",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair40() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000551", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair41() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000522",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair42() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000522", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair43() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000688",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair44() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000688", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair45() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000716",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair46() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000716", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair47() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211037001",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function hair48() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211037001", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+  
+function MENU6()
+mask = gg.choice({
+"🌸SEASON 1 🌸",
+"OFF",
+" 🥽BNL BEARD 🥽",
+"OFF",
+"🐼S4 MASK🐼",
+"OFF",
+"🕴MASK ARTIC BLUE🕴",
+"OFF",
+"🎭ZEROX MASK🎭",
+"OFF",
+"🌑HEDA MASK🌑",
+"OFF",
+"😛 FEMALE MASK😛",
+"🇦🇷 7upOFF",
+"💀FIRE MASK💀",
+"OFF",
+"🥵 RAMPAGE ",
+"OFF",
+"😭RARE ITEM😂",
+"OFF",
+"🐍COBRA BUNDLE 🐍",
+"OFF",
+"🐱MOST RARE MASK🐱",
+"OFF",
+"😗NEW MALS😗",
+"OFF",
+"😗NEW MALS😗",
+"OFF",
+"😗NEW MALS😗",
+"OFF",
+"😍SHANTO CDI😍",
+"OFF",
+"😺SHANTO ER BOWRE XUDI😺",
+"😔OFF😔",
+"🫠FFWS BUNDLE 😒",
+"😔OFF😔",
+"💀END💀"
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+gg.toast("SCRIPT VELLIX_AO   ")
+if mask == nil then else
+if mask == 1 then mask1() end   
+if mask == 2 then mask2() end   
+if mask == 3 then mask3() end   
+if mask == 4 then mask4() end   
+if mask == 5 then mask5() end   
+if mask == 6 then mask6() end   
+if mask == 7 then mask7() end   
+if mask == 8 then mask8() end   
+if mask == 9 then mask9() end   
+if mask == 10 then mask10() end   
+if mask == 11 then mask11() end   
+if mask == 12 then mask12() end
+if mask == 13 then mask13() end
+if mask == 14 then mask14() end
+if mask == 15 then mask15() end
+if mask == 16 then mask16() end
+if mask == 17 then mask17() end
+if mask == 18 then mask18() end
+if mask == 19 then mask19() end
+if mask == 20 then mask20() end
+if mask == 21 then mask21() end
+if mask == 22 then mask22() end
+if mask == 23 then mask23() end
+if mask == 24 then mask24() end
+if mask == 25 then mask25() end
+if mask == 26 then mask26() end
+if mask == 27 then mask27() end
+if mask == 28 then mask28() end
+if mask == 29 then mask29() end
+if mask == 30 then mask30() end
+if mask == 31 then mask31() end
+if mask == 32 then mask32() end
+if mask == 33 then mask33() end
+if mask == 34 then mask34() end
+if mask == 35 then mask35() end
+if mask == 36 then mask36() end
+if mask == 37 then
+        HOME()
+      end
+    end
+    LuaLibraryTool = -1
+  end
+
+function mask1() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000016",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask2() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000016", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask3() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000140",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask4() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000140", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("??SCRIPT VELLIX_AO  ")
+end
+
+function mask5() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000045",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask6() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000045", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask7() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000168",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask8() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000168", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+
+function mask9() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000523",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("🇦🇷 7upSCRIPT VELLIX_AO   ??")
+end
+
+function mask10() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000523", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask11() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000352",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask12() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000352", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask13() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000834",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask14() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000834", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask15() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000847",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask16() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000847", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask17() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211034077",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask18() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211034077", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask19() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000669",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask20() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000669", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask21() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000835",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask22() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000835", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask23() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000046",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask24() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000046", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask25() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000849",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask26() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000849", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask27() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000610",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask28() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000610", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask29() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000703",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask30() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000703", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask31() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000134",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask32() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000134", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask33() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211000607",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask34() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211000607", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask35() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("208000000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("211037000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function mask36() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("211037000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("208000000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+  
+function MENU7()
+cloth = gg.choice({
+"🌸 SEASON 1 🌸",
+"OFF",
+"🎽 SEASON 2 🎽",
+"OFF",
+"💦NAVY SHADE♂️",
+"OFF",
+"🌟GOLDEN SHADE♂️",
+"OFF",
+"💦 NAVY SHADE ♀️",
+"OFF",
+"🌟GOLDEN SHADE♀️",
+"OFF",
+"🎈TOP SHADOW🎈",
+"OFF",
+"👨‍🎤 BLACK T-SHIRT 👨‍🎤",
+"OFF",
+" 👔 RUOK JACKET 👔 ",
+"OFF",
+"👔 JACKET 👔",
+"OFF",
+" 👕 S4 JACKET 👕 ",
+"OFF",
+" 👕 JERSEY 👕",
+"OFF",
+"👔 BREACK DANCER 👔 ",
+"OFF",
+"🌚 FEMALE DRESS🌚",
+"OFF",
+"🎽 NEW JERSEY 🎽",
+"OFF",
+"🎽NEW JERSEY 🎽",
+"OFF",
+"🦸 SESSION 8🦸",
+"OFF",
+"🌝XD ZEROX 🌝",
+"OFF",
+"🤣JOKAR 🤣",
+"OFF",
+"🥵 RAMPAGE BUNDLE 🥵",
+"OFF",
+"🐸LEGEND 🐸",
+"OFF",
+"🤍 WHITE T-SHIRT 🤍",
+"OFF",
+"🐍COBRA BUNDLE 🐍",
+"OFF",
+"🙄 TRANSLATION 💔",
+"OFF",
+"🙄 GHOST CUDHI BHAI 💔",
+"OFF",
+"😿S3😿",
+"OFF",
+"😿S7😿",
+"OFF",
+"😁SK SABBIR😁",
+"OFF",
+"🫂TAKLA MURAD🫂",
+"OFF",
+"🐼PANDA CDI🐼",
+"OFF",
+"🗿xdi nah 🗿",
+"OFF",
+"😷TAKLA MURAD😷",
+"OFF",
+"👍FFWS BUNDLE 😾",
+"OFF",
+"KELUAR"
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+gg.toast("SCRIPT VELLIX_AO   ")
+if cloth == nil then else
+if cloth == 1 then cloth1() end   
+if cloth == 2 then cloth2() end   
+if cloth == 3 then cloth3() end   
+if cloth == 4 then cloth4() end   
+if cloth == 5 then cloth5() end   
+if cloth == 6 then cloth6() end   
+if cloth == 7 then cloth7() end   
+if cloth == 8 then cloth8() end   
+if cloth == 9 then cloth9() end   
+if cloth == 10 then cloth10() end   
+if cloth == 11 then cloth11() end   
+if cloth == 12 then cloth12() end   
+if cloth == 13 then cloth13() end   
+if cloth == 14 then cloth14() end   
+if cloth == 15 then cloth15() end   
+if cloth == 16 then cloth16() end   
+if cloth == 17 then cloth17() end   
+if cloth == 18 then cloth18() end   
+if cloth == 19 then cloth19() end   
+if cloth == 20 then cloth20() end   
+if cloth == 20 then cloth20() end   
+if cloth == 21 then cloth21() end   
+if cloth == 22 then cloth22() end   
+if cloth == 23 then cloth23() end   
+if cloth == 24 then cloth24() end   
+if cloth == 25 then cloth25() end   
+if cloth == 26 then cloth26() end   
+if cloth == 27 then cloth27() end   
+if cloth == 28 then cloth28() end   
+if cloth == 29 then cloth29() end   
+if cloth == 30 then cloth30() end  
+if cloth == 31 then cloth31() end   
+if cloth == 32 then cloth32() end   
+if cloth == 33 then cloth33() end   
+if cloth == 34 then cloth34() end   
+if cloth == 35 then cloth35() end   
+if cloth == 36 then cloth36() end   
+if cloth == 37 then cloth37() end   
+if cloth == 38 then cloth38() end   
+if cloth == 39 then cloth39() end   
+if cloth == 40 then cloth40() end
+if cloth == 41 then cloth41() end
+if cloth == 42 then cloth42() end   
+if cloth == 43 then cloth43() end   
+if cloth == 44 then cloth44() end   
+if cloth == 45 then cloth45() end   
+if cloth == 46 then cloth46() end   
+if cloth == 47 then cloth47() end   
+if cloth == 48 then cloth48() end
+if cloth == 49 then cloth49() end   
+if cloth == 50 then cloth50() end
+if cloth == 51 then cloth51() end
+if cloth == 52 then cloth52() end
+if cloth == 53 then cloth53() end
+if cloth == 54 then cloth54() end
+if cloth == 55 then cloth55() end
+if cloth == 56 then cloth56() end
+if cloth == 57 then cloth57() end
+if cloth == 58 then cloth58() end
+if cloth == 59 then cloth59() end
+if cloth == 60 then cloth60() end
+if cloth == 61 then cloth61() end
+if cloth == 62 then cloth62() end
+if cloth == 63 then cloth63() end
+if cloth == 64 then cloth64() end
+if cloth == 65 then cloth65() end
+if cloth == 66 then cloth66() end
+if cloth == 67 then
+        HOME()
+      end
+    end
+    LuaLibraryTool = -1
+  end
+
+function cloth1() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000156",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO   ")
+end
+
+function cloth2() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000156", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth3() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000182",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth4() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000182", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth5() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000545",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth6() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000545", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+ 
+function cloth7() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,000,543",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth8() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203,000,543", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth9() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,000,546",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth10() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203,000,546", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth11() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,000,544",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth12() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203,000,544", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth13() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000998",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth14() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000998", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth15() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000221",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO   ")
+end
+
+function cloth16() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000221", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth17() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,000,219",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth18() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000219", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,000,573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth19() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,035,060",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth20() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203,035,060", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth21() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,000,236",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth22() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203,000,236", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth23() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,035,048",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth24() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203035048", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth25() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,000,210",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth26() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000210", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth27() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,000,819",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth28() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000819", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth29() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,000,192",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth30() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000192", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,001,573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth31() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203,001,129",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth32() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203,001,129", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth33() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203,000,573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000356",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth34() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203,000,356", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth35() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203,000,573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000999",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth36() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203,000,999", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth37() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203,000,573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000534",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth38() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000534", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth39() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203,000,573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203034052",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth40() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203034052", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth41() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203001157",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth42() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203001157", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth43() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203001360",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth44() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203001360", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth45() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000979",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth46() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000979", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth47() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000151",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth48() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000151", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth49() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000601",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth50() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000601", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth51() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000242",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth52() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000242", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth53() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000310",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth54() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000310", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth55() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000247",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth56() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000247", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth57() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000967",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth58() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000967", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth59() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000983",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth60() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000983", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth61() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203001076",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth62() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203001076", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth63() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000187",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth64() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000187", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth65() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203000573", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203037000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function cloth66() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("203037000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("203000573",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function MENU8()
+pant = gg.choice({
+    "🎟ANGEL ♂️",
+    "OFF",
+   "🎴ANGEL  ♂️",
+   "OFF",
+   "🎟ANGEL ♀️",
+   "OFF",
+   "🎴ANGEL ♀️",
+   "OFF",
+    "🎲ANGEL ♂️",
+    "OFF",
+    "🎲 ANGEL ♀️",
+    "OFF",
+    "🦖 DINO 🦖",
+    "OFF",
+    " 👖 HIP HOP 👖 ",
+    "OFF",
+  " 🩳 JERSY PANT 🩳",
+  "OFF",
+  "🥊OPM PANTS 🥊",
+  "OFF",
+  "🩳BLACK SHORT🩳",
+  "OFF",
+  "👖 JAZZ CLASSIC 👖",
+  "OFF",
+  "🤤FEMALE PANT🌚",
+  "OFF",
+  "👖 RARE PANT ♂️",
+  "OFF",
+    "👖 RARE PANT ♀️",
+    "OFF",
+    "💀NEW PANT💀",
+    "OFF",
+    "?? RAMPAGE 🥵",
+    "OFF",
+    "🐍CORBA 🐍",
+    "OFF",
+    "🥲NEW PANT🥲",
+    "OFF",
+    "🐱OlD PANT 🐱",
+    "OFF",
+    "🥴SOTO PANT🥴",
+    "OFF",
+    "🥸SIRA PANT 1🥸",
+    "🥹OFF🥹",
+    "🥸SIRA PANT 2🥸",
+        "🥹OFF🥹",
+    "🫂SIRA PANT 3🫂",
+        "🥹OFF🥹",
+        "😂SUNAN BKCD😂",
+                "🥹OFF🥹",
+                "😔SHOANTO KHANKI😔",
+                 "🥹OFF🥹",
+                 "🫤SUNAN BOKACHODA KHANKIRPOLA 🫤",
+                 "OFF",
+                 "😂FFWS BUNDLE 😂",
+                 "OFF",
+    "KELUAR"
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+gg.toast("SCRIPT VELLIX_AO   ")
+if pant == nil then else
+if pant == 1 then pant1() end   
+if pant == 2 then pant2() end   
+if pant == 3 then pant3() end   
+if pant == 4 then pant4() end   
+if pant == 5 then pant5() end   
+if pant == 6 then pant6() end   
+if pant == 7 then pant7() end   
+if pant == 8 then pant8() end   
+if pant == 9 then pant9() end   
+if pant == 10 then pant10() end   
+if pant == 11 then pant11() end   
+if pant == 12 then pant12() end   
+if pant == 13 then pant13() end   
+if pant == 14 then pant14() end   
+if pant == 15 then pant15() end   
+if pant == 16 then pant16() end   
+if pant == 17 then pant17() end   
+if pant == 18 then pant18() end   
+if pant == 19 then pant19() end   
+if pant == 20 then pant20() end   
+if pant == 20 then pant20() end   
+if pant == 21 then pant21() end   
+if pant == 22 then pant22() end   
+if pant == 23 then pant23() end   
+if pant == 24 then pant24() end   
+if pant == 25 then pant25() end   
+if pant == 26 then pant26() end   
+if pant == 27 then pant27() end   
+if pant == 28 then pant28() end   
+if pant == 29 then pant29() end   
+if pant == 30 then pant30() end   
+if pant == 31 then pant31() end   
+if pant == 32 then pant32() end   
+if pant == 33 then pant33() end   
+if pant == 34 then pant34() end  
+if pant == 35 then pant35() end   
+if pant == 36 then pant36() end   
+if pant == 37 then pant37() end   
+if pant == 38 then pant38() end   
+if pant == 39 then pant39() end   
+if pant == 40 then pant40() end
+if pant == 41 then pant41() end
+if pant == 42 then pant42() end
+if pant == 43 then pant43() end
+if pant == 44 then pant44() end   
+if pant == 45 then pant45() end
+if pant == 46 then pant46() end
+if pant == 47 then pant47() end
+if pant == 48 then pant48() end
+if pant == 49 then pant49() end
+if pant == 50 then pant50() end
+if pant == 51 then pant51() end
+if pant == 52 then pant52() end
+if pant == 53 then pant53() end
+if pant == 54 then pant54() end
+if pant == 55 then pant55() end
+if pant == 56 then pant56() end
+if pant == 57 then
+        HOME()
+      end
+    end
+    LuaLibraryTool = -1
+  end
+
+function pant1() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000103",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant2() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000103", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant3() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000783",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant4() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000783", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant5() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000101",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant6() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000101", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant7() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000784",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant8() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000784", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant9() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000001~204034042", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204034042",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant10() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204034042", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant11() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204034043",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant12() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204034043", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+ 
+function pant13() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204034044",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant14() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204034044", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant15() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204,000,111",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant16() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204,000,111", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant17() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204,000,120",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant18() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204,000,120", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant19() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000650",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant20() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000650", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant21() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000002",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant22() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000002", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant23() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000181",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant24() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000181", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant25() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000536",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant26() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000536", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant27() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000322",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant28() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000322", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant29() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000323",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant30() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000323", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant31() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000501",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant32() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000501", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant33() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204034045",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant34() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204034045", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant35() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000657",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant36() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000657", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant37() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000515",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant38() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000515", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant39() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000558",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant40() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000558", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant41() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000193",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant42() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000193", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant43() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000516",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant44() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000516", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant45() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000518",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant46() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000518", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant47() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000519",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant48() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000519", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant49() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000712",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant50() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000712", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant51() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000221",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant52() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000221", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant53() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000247",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant54() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000247", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant55() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204000345", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204037000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function pant56() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("204037000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("204000345",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function MENU9()
+shoe = gg.choice({
+   "🤍WHITE SHOES",
+   "OFF",
+   "🤍 WHITE SHOES ♂️♀️",
+   "OFF",
+   "🩴SANDAL",
+   "OFF",
+  "👟JORDAN",
+  "OFF",
+  "👟HiP HOP👟",
+  "OFF",
+  "🤍 WHITE SHOE NEW ♂️",
+  "OFF",
+  "🤍 WHITE SHOE NEW ♀️",
+  "OFF",
+  "🥵 RAMPAGE 🥵",
+  "OFF",
+  "🐍CORBA BUNDLE 🐍",
+  "OFF",
+  "😍SHOE 1😍",
+  "OFF",
+  "😍SHOE 2😍",
+  "OFF",
+  "😍SHOE 3😍",
+  "OFF",
+  "🦂TEAM UP🦂",
+    "OFF",
+    "😒FFWS 😒",
+     "OFF",
+  "KELUAR"
+}, nil, os["date"](" 😎 VELLIX_AO😎\n ═══════════════\n ‼️ Script Tanpa Expired \n ═══════════════\n┏➤ ✒Creator   : VELLIX_AO\n |-➤ 📅Date      : %d %b %Y\n┗➤ ⏰Time      : %H:%M%p\n"))
+gg.toast("SCRIPT VELLIX_AO   ")
+if shoe == nil then else
+if shoe == 1 then shoe1() end   
+if shoe == 2 then shoe2() end   
+if shoe == 3 then shoe3() end   
+if shoe == 4 then shoe4() end   
+if shoe == 5 then shoe5() end   
+if shoe == 6 then shoe6() end   
+if shoe == 7 then shoe7() end   
+if shoe == 8 then shoe8() end   
+if shoe == 9 then shoe9() end   
+if shoe == 10 then shoe10() end   
+if shoe == 11 then shoe11() end   
+if shoe == 12 then shoe12() end   
+if shoe == 13 then shoe13() end   
+if shoe == 14 then shoe14() end
+if shoe == 15 then shoe15() end
+if shoe == 16 then shoe16() end
+if shoe == 17 then shoe17() end
+if shoe == 18 then shoe18() end
+if shoe == 19 then shoe19() end
+if shoe == 20 then shoe20() end
+if shoe == 21 then shoe21() end
+if shoe == 22 then shoe22() end
+if shoe == 23 then shoe23() end
+if shoe == 24 then shoe24() end
+if shoe == 25 then shoe25() end
+if shoe == 26 then shoe26() end
+if shoe == 27 then shoe27() end
+if shoe == 28 then shoe28() end
+if shoe == 29 then
+        HOME()
+      end
+    end
+    LuaLibraryTool = -1
+  end
+
+  function shoe1() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000051",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe2() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000051", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe3() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000005",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe4() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000005", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe5() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000070",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe6() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000070", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe7() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000139",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe8() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000139", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe9() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000097",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe10() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000097", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe11() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000059",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe12() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000059", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe13() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000060",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe14() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000060", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe15() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205034044",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe16() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205034044", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe17() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000598",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe18() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000598", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe19() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000101",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe20() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000101", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe21() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000102",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe22() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000102", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe23() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000103",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe24() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000103", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe25() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000008",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+
+function shoe26() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000008", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+  
+  function shoe27() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205000299", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205037000",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+  
+  function shoe28() 
+  gg.clearResults()
+    gg.setRanges(gg.REGION_ANONYMOUS)
+    gg.searchNumber("205037000", gg.TYPE_DWORD)
+    gg.getResults(100000)
+gg.editAll("205000299",gg.TYPE_DWORD )
+gg.clearResults()
+ gg.toast("SCRIPT VELLIX_AO")
+end
+  
+  function Channel()
+gg.alert("                     ❗CREATOR BY VELLIX_AO❗\nJoin My comu \n https://chat.whatsapp.com/IH0whubjkttIDWVSvWOLW0")
+  gg.toast("VELLIX_AO")
+end
+  
+function LOBBY() --End Script
+gg.alert("🔥 SCRIPT BY VELLIX_AO🔥") 
+gg.toast("⚠️SUBSCRIBE VELLIX_AO⚠️") 
+print("🖤SELAMAT TINGGAL🖤") 
+print("🃏CREATOR SCRIPT BY VELLIX_AO🃏")
+gg.skipRestoreState()
+  gg.setVisible(true)
+  os.exit()
+    os.remove(gg.EXT_STORAGE .. "/Android/data/com.dts.freefireth/files/reportnew.db", gg.LOAD_APPEND)
+    os.remove(gg.EXT_STORAGE .. "/Android/data/com.dts.freefireth/files/ymrtc_log.txt", gg.LOAD_APPEND)
+    os.remove(gg.EXT_STORAGE .. "/Android/data/com.dts.freefireth/files/Free Fire Screenshot.png", gg.LOAD_APPEND)
+    os.remove(gg.EXT_STORAGE .. "/Android/data/com.dts.freefireth/files/GameProtector3", gg.LOAD_APPEND)
+    os.remove("/storage/emulated/0/Android/data/com.dts.freefireth/files/GameProtector3")
+    os.remove("/storage/emulated/0/Android/data/com.dts.freefireth/files/reportnew.db")
+    os.remove("/storage/emulated/0/Android/data/com.dts.freefireth/files/ymrtc_log.txt")
+    os.remove("/storage/emulated/0/Android/data/com.dts.freefireth/files/Free Fire Screenshot.png")
+    os.remove("/storage/emulated/0/com.garena.msdk/guest100067.dat")
+    os.remove("/storage/emulated/0/Android/data/com.dts.freefireth/files/Free Fire Screenshot.png")
+    os.remove("/storage/emulated/0/Android/data/com.ludashi.superboost/files/crashinfo")
+    os.remove("/storage/emulated/0/Android/data/com.ludashi.superboost/files/Movies")
+    os.remove("/storage/emulated/0/Android/data/com.ludashi.superboost/files")
+    os.remove("/storage/emulated/0/Android/data/com.ludashi.superboost")
+    gg.skipRestoreState()
+    gg.setVisible(true)
+    os.exit()
+  end
+
+while true do
+  if gg.isVisible(true) then
+    LuaLibraryTool = 1
+    gg.setVisible(false)
+  end
+  if LuaLibraryTool == 1 then
+    HOME()
+  end
+end
