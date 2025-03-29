@@ -1,0 +1,598 @@
+
+
+  gg.setVisible(false)
+modbyfami = os.date ('           ⚡MODMENU BY VELLIX⚡\
+\
+           ❦ ════ •⊰❂ - ❂⊱• ════ ❦\
+\
+📆Dᴀᴛᴇ📆 : %Y/%m/%d\
+\
+🕛Tɪᴍᴇ🕛 : %H:%M:%S\
+\
+⏳Exᴘɪʀᴇᴅ Sᴄʀɪᴘᴛ⏳ : 0000/00/00\
+\
+           ❦ ════ •⊰❂ - ❂⊱• ════ ❦')
+gg.alert(modbyfami)
+gg.setVisible(true)
+
+gg.setVisible(false)
+gg.alert("©Hack\n©YouTube : VELLIX_AO\n©Fb: Kurol watu\n©Subscribe Channel Free")
+
+
+function IDX()
+local menu = gg.choice({"𝐁𝐘𝐏𝐀𝐒𝐒 𝐌𝐄𝐍𝐔", "𝐀𝐈𝐌 𝐌𝐄𝐍𝐔", "𝐏𝐋𝐀𝐘𝐄𝐑 𝐌𝐄𝐍𝐔", "𝐎𝐓𝐇𝐄𝐑", "🔚 EXIT"
+    }, nil, "⏩⏩𝐒𝐂𝐑𝐈𝐏𝐓 𝐕𝐄𝐋𝐋𝐈𝐗_𝐀𝐎⏪⏪\n𝐕𝐄𝐋𝐋𝐈𝐗_𝐀𝐎 𝐁𝐋𝐎𝐎𝐃 𝐒𝐓𝐑𝐈𝐊𝐄\n🇮🇩 𝐁𝐋𝐎𝐎𝐃 𝐒𝐓𝐑𝐈𝐊𝐄 𝐆𝐋𝐎𝐁𝐀𝐋🇮🇩")
+    
+    if menu then
+        if menu == 1 then
+            BypassM()
+        elseif menu == 2 then
+            AimM()
+        elseif menu == 3 then
+            PlayerM()
+        elseif menu == 4 then
+            Other()
+        elseif menu == 5 then
+            exitScript()
+        else gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+        end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+    end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+
+function BypassM()
+local menu = gg.choice({"𝐁𝐘𝐏𝐀𝐒𝐒 𝐋𝐎𝐁𝐁𝐘", "𝐂𝐋𝐄𝐀𝐑 𝐑𝐄𝐏𝐎𝐑𝐓", "𝐅𝐈𝐗 𝐋𝐀𝐆", "🔙 𝐁𝐀𝐂𝐊"
+    }, nil, "⏩⏩𝐒𝐂𝐑𝐈𝐏𝐓 𝐕𝐄𝐋𝐋𝐈𝐗_𝐀𝐎⏪⏪\n𝐕𝐄𝐋𝐋𝐈𝐗_𝐀𝐎 𝐁𝐋𝐎𝐎𝐃 𝐒𝐓𝐑𝐈𝐊𝐄\n🇮🇩 𝐁𝐋𝐎𝐎𝐃 𝐒𝐓𝐑𝐈𝐊𝐄 𝐆𝐋𝐎𝐁𝐀𝐋🇮🇩")
+    
+    if menu then
+        if menu == 1 then
+            bypassLoby()
+        elseif menu == 2 then
+            FixReport()
+        elseif menu == 3 then
+            ClearLag()
+        elseif menu == 4 then
+            IDX()
+        else gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+        end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+    end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+
+function AimM()
+local menu = gg.choice({"𝐗𝐈𝐋𝐄𝐍𝐓 𝐀𝐈𝐌", "𝐀𝐈𝐌 𝐀𝐒𝐒𝐈𝐒𝐓 𝐂𝐔𝐒𝐓𝐎𝐌", "𝐃𝐎𝐁𝐄𝐋 𝐉𝐔𝐌𝐏", "𝐌𝐀𝐆𝐈𝐂 𝐁𝐔𝐋𝐋𝐄𝐓 𝐆𝐀𝐌𝐄", "𝐁𝐔𝐋𝐋𝐄𝐓 𝐒𝐏𝐑𝐄𝐀𝐃", "𝐁𝐔𝐋𝐋𝐄𝐓 𝐏𝐄𝐍𝐄𝐓𝐑𝐀𝐓𝐈𝐎𝐍", "𝐃𝐀𝐌𝐀𝐆𝐄 𝐁𝐔𝐅𝐅", "𝐄𝐗𝐏𝐋𝐎𝐒𝐈𝐕𝐄 𝐃𝐀𝐌𝐀𝐆𝐄", "𝐍𝐎 𝐑𝐄𝐂𝐎𝐈𝐋 𝐕1", "𝐍𝐎 𝐑𝐄𝐂𝐎𝐈𝐋 𝐕2", "𝐋𝐄𝐒𝐒 𝐑𝐄𝐂𝐎𝐈𝐋", "🔙 𝐁𝐀𝐂𝐊"
+    }, nil, "⏩⏩𝐒𝐂𝐑𝐈𝐏𝐓 𝐕𝐄𝐋𝐋𝐈𝐗_𝐀𝐎⏪⏪\n𝐕𝐄𝐋𝐋𝐈𝐗_𝐀𝐎 𝐁𝐋𝐎𝐎𝐃 𝐒𝐓𝐑𝐈𝐊𝐄\n🇮🇩 𝐁𝐋𝐎𝐎𝐃 𝐒𝐓𝐑𝐈𝐊𝐄 𝐆𝐋𝐎𝐁𝐀𝐋🇮🇩")
+    
+    if menu then
+        if menu == 1 then
+            Xilentaim()
+        elseif menu == 2 then
+            AimAssist()
+        elseif menu == 3 then
+            Jump2()
+        elseif menu == 4 then
+        MagicBulletGm()
+        elseif menu == 5 then
+        BulletSpread()
+        elseif menu == 6 then
+        BulletPenet()
+        elseif menu == 7 then
+        DamageBuff()
+        elseif menu == 8 then
+        ExplosifDmg()
+        elseif menu == 9 then
+        NoRecoil()
+        elseif menu == 10 then
+        NoRecoil2()
+        elseif menu == 11 then
+        LessRecoil()
+        elseif menu == 12 then
+            IDX()
+        else gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+        end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+    end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+function PlayerM()
+local menu = gg.choice({"𝐏𝐈𝐍𝐊 𝐁𝐎𝐃𝐘", "𝐁𝐎𝐃𝐘 𝐂𝐎𝐋𝐎𝐑", "𝐀𝐍𝐓𝐄𝐍𝐀 𝐕1", "𝐀𝐍𝐓𝐄𝐍𝐀 𝐕2", "𝐀𝐍𝐓𝐄𝐍𝐀 𝐌𝐄𝐃𝐈𝐀𝐓𝐄𝐊", "𝐀𝐍𝐓𝐄𝐍𝐀 𝐒𝐀𝐅𝐄 𝐕1", "𝐀𝐍𝐓𝐄𝐍𝐀 𝐒𝐀𝐅𝐄 𝐕2", "🔙 𝐁𝐀𝐂𝐊"
+    }, nil, "⏩⏩𝐒𝐂𝐑𝐈𝐏𝐓 𝐕𝐄𝐋𝐋𝐈𝐗_𝐀𝐎⏪⏪\n𝐕𝐄𝐋𝐋𝐈𝐗_𝐀𝐎 𝐁𝐋𝐎𝐎𝐃 𝐒𝐓𝐑𝐈𝐊𝐄\n🇮🇩 𝐁𝐋𝐎𝐎𝐃 𝐒𝐓𝐑𝐈𝐊𝐄 𝐆𝐋𝐎𝐁𝐀𝐋🇮🇩")
+    
+    if menu then
+        if menu == 1 then
+            PinkBody()
+        elseif menu == 2 then
+            BodyColor()
+        elseif menu == 3 then
+            AntenaVLoop()
+        elseif menu == 4 then
+        AntenaVLoop2()
+        elseif menu == 5 then
+        AntenaMediatek()
+        elseif menu == 6 then
+        AntenaSafe()
+        elseif menu == 7 then
+        AntenaSafe2()
+        elseif menu == 8 then
+            IDX()
+        else gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+        end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+    end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+function Other()
+local menu = gg.choice({"𝐒𝐏𝐄𝐄𝐃 𝐇𝐀𝐂𝐊", "𝐒𝐌𝐎𝐎𝐓𝐇 𝐆𝐑𝐀𝐏𝐇𝐈𝐂", "120 𝐅𝐏𝐒", "𝐍𝐈𝐆𝐇𝐓 𝐌𝐎𝐃𝐄", "🔙 𝐁𝐀𝐂𝐊"
+    }, nil, "⏩⏩𝐒𝐂𝐑𝐈𝐏𝐓 𝐕𝐄𝐋𝐋𝐈𝐗_𝐀𝐎⏪⏪\n𝐕𝐄𝐋𝐋𝐈𝐗_𝐀𝐎 𝐁𝐋𝐎𝐎𝐃 𝐒𝐓𝐑𝐈𝐊𝐄\n🇮🇩 𝐁𝐋𝐎𝐎𝐃 𝐒𝐓𝐑𝐈𝐊𝐄 𝐆𝐋𝐎𝐁𝐀𝐋🇮🇩")
+    
+    if menu then
+        if menu == 1 then
+            SpeedHack()
+        elseif menu == 2 then
+            Smooth()
+        elseif menu == 3 then
+            fps()
+        elseif menu == 4 then
+        Night()
+        elseif menu == 5 then
+            IDX()
+        else gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+        end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+    end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+function FixReport()
+gg.setValues({
+							[1] = {
+								['address'] = 0x3d31fc,
+								['flags'] = 1,
+								['value'] = 'C0r',
+							},
+							[2] = {
+								['address'] = 0x3d31fd,
+								['flags'] = 1,
+								['value'] = '03r',
+							},
+							[3] = {
+								['address'] = 0x3d31fe,
+								['flags'] = 1,
+								['value'] = '5Fr',
+							},
+							[4] = {
+								['address'] = 0x3d31ff,
+								['flags'] = 1,
+								['value'] = 'D6r',
+							},
+						})
+
+gg.getRangesList("libpharos.so")
+gg.setValues({
+							[1] = {
+								['address'] = 0x76d8288ce4,
+								['flags'] = 32,
+								['value'] = 131842,
+							},
+						})
+
+gg.clearResults()
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+local function setvalue(address, flags, value)
+    gg.setValues({{address = address, flags = flags, value = value}})
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+--Xilen aim no bug
+function Xilentaim()
+io.open(gg.EXT_CACHE_DIR .. "/crack.txt", "w+"):write([[
+12234
+Var #71BD0CF89C|71bd0cf89c|10|3f80a3d7|0|0|0|0|rw-p|/data/app/~~iM4PotWopHG44csn4JVYxQ==/com.netease.newspike-uHbNvLdQPdzlBfwfqRNc7A==/lib/arm64/libGame.so:bss|1989c
+]]):close()
+gg.loadList(gg.EXT_CACHE_DIR .. "/crack.txt", gg.LOAD_VALUES)
+io.open(gg.EXT_CACHE_DIR .. "/crack.txr", "w+"):write(string.char()):close()
+gg.processResume()
+gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+gg.clearResults()
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+--No Recoil
+function NoRecoil()		
+so = gg.getRangesList("libGame.so")[1].start
+    py = 0x16AD028
+    setvalue(so + py, 32, "h0000000000003440")
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+gg.clearResults()
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+function XilentV3()		
+so = gg.getRangesList("libGame.so")[1].start
+    py = 0x76e1d66e80
+    setvalue(so + py, 4, "h9C557F3F")
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+gg.clearResults()
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+function Jump2()
+gg.setRanges(gg.REGION_OTHER)
+gg.searchNumber("-1;-35.0", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+revert = gg.getResults(1000, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("10.5", gg.TYPE_FLOAT)
+gg.processResume()
+gg.toast("Active ✅")
+gg.clearResults()
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+function Night()		
+so = gg.getRangesList("libGame.so")[1].start
+    py = 23572216
+    setvalue(so + py, 16, "h00000000")
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+gg.clearResults()
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+function BulletPenet()
+io.open(gg.EXT_CACHE_DIR .. "/crack.txt", "w+"):write([[
+3064
+Var #7A1B74E36C|7a1b74e36c|10|41200000|0|0|0|0|rw-p|/data/app/~~iM4PotWopHG44csn4JVYxQ==/com.netease.newspike-uHbNvLdQPdzlBfwfqRNc7A==/lib/arm64/libGame.so:bss|1436c
+]]):close()
+gg.loadList(gg.EXT_CACHE_DIR .. "/crack.txt", gg.LOAD_VALUES)
+io.open(gg.EXT_CACHE_DIR .. "/crack.txr", "w+"):write([[]]):close()
+gg.processResume()
+gg.clearResults()
+gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+--Neon Body Pink
+function PinkBody()
+gg.setRanges(gg.REGION_CODE_APP)
+gg["searchNumber"]("1.39569327e-42;1.36206211e-42;2.0;9.80908925e-45;9.80908925e-45:25", gg["TYPE_FLOAT"], false, gg["SIGN_EQUAL"], 0, -1, 0)
+revert = gg.getResults(100, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("0.177", gg.TYPE_FLOAT)
+gg.processResume()
+gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+gg.clearResults()
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+function SpeedHack()
+gg.setRanges(gg.REGION_CODE_APP)
+gg.searchNumber("1.75838851929", gg.TYPE_FLOAT)
+gg.getResults(1000)
+gg.editAll("1.75958851452", gg.TYPE_FLOAT)
+gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+gg.clearResults()
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+--Antena V Loop
+function AntenaVLoop()
+gg.clearResults()
+  gg.setRanges(gg.REGION_OTHER)
+  while true do
+    gg.searchNumber("1.35216355324", 16, false, 536870912, 0, -1, 0)
+    gg.setVisible(false)
+    gg.processResume()
+    gg.refineNumber("1.35216355324", 16, false, 536870912, 0, -1, 0)
+    gg.setVisible(false)
+    local results = gg.getResults(1000)
+    for i, result in ipairs(results) do
+      gg.editAll("-9999999999", 16)
+      gg.setVisible(false)
+    end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪    
+    gg.searchNumber("0.58781325817", 16, false, 536870912, 0, -1, 0)
+    gg.setVisible(false)
+    gg.processResume()
+    gg.refineNumber("0.58781325817", 16, false, 536870912, 0, -1, 0)
+    gg.setVisible(false)
+    results = gg.getResults(1000)
+    for i, result in ipairs(results) do
+      gg.editAll("9999999999", 16)
+      gg.setVisible(false)
+    end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+    gg.sleep(1000)
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+
+function AntenaVLoop2()
+gg.clearResults()
+  gg.setRanges(4)
+  while true do
+    gg.searchNumber("1.35216355324", 16, false, 536870912, 0, -1, 0)
+    gg.setVisible(false)
+    gg.processResume()
+    gg.refineNumber("1.35216355324", 16, false, 536870912, 0, -1, 0)
+    gg.setVisible(false)
+    local results = gg.getResults(1000)
+    for i, result in ipairs(results) do
+      gg.editAll("-9999999999", 16)
+      gg.setVisible(false)
+    end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪    
+    gg.searchNumber("0.58781325817", 16, false, 536870912, 0, -1, 0)
+    gg.setVisible(false)
+    gg.processResume()
+    gg.refineNumber("0.58781325817", 16, false, 536870912, 0, -1, 0)
+    gg.setVisible(false)
+    results = gg.getResults(1000)
+    for i, result in ipairs(results) do
+      gg.editAll("9999999999", 16)
+      gg.setVisible(false)
+    end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+    gg.sleep(1000)
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+--Antena MTK
+function AntenaMediatek()
+    gg.setRanges(gg.REGION_OTHER)
+    while true do
+        gg.searchNumber("1.35216355324", 16, false, 536870912, 0, -1, 0)
+        gg.refineNumber("1.35216355324", 16, false, 536870912, 0, -1, 0)
+        gg.getResults(1000)
+        gg.editAll("-9999999999", 16)
+        gg.clearResults()
+
+        gg.searchNumber("0.58781325817", 16, false, 536870912, 0, -1, 0)
+        gg.refineNumber("0.58781325817", 16, false, 536870912, 0, -1, 0)
+        gg.getResults(1000)
+        gg.editAll("9999999999", 16)
+        gg.clearResults()
+    end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+gg.toast("☢️ 𝙰𝙽𝚃𝙴𝙽𝙰 𝙼𝙴𝙳𝙸𝙰𝚃𝙴𝙺 [AKTIF]")
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+function AntenaSafe()
+gg.setRanges(gg.REGION_OTHER)
+gg.searchNumber("1.35216355324", 16, false, 536870912, 0, -1, 0)
+        gg.refineNumber("1.35216355324", 16, false, 536870912, 0, -1, 0)
+        gg.getResults(1000)
+        gg.editAll("-9999999999", 16)
+        gg.clearResults()
+gg.clearResults()
+gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+function AntenaSafe2()
+gg.setRanges(4)
+gg.searchNumber("1.35216355324", 16, false, 536870912, 0, -1, 0)
+        gg.refineNumber("1.35216355324", 16, false, 536870912, 0, -1, 0)
+        gg.getResults(1000)
+        gg.editAll("-9999999999", 16)
+        gg.clearResults()
+gg.clearResults()
+gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+  
+  function setValues(A0_1296, A1_1297, A2_1298)
+    gg.setValues({
+      [1] = {
+        address = A0_1296,
+        flags = A1_1297,
+        value = A2_1298
+      }
+    })
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function setvalue(A0_1299, A1_1300, A2_1301)
+    local L3_1302
+    L3_1302 = {}
+    L3_1302[1] = {}
+    L3_1302[1].address = A0_1299
+    L3_1302[1].flags = A1_1300
+    L3_1302[1].value = A2_1301
+    gg.setValues(L3_1302)
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function bypassLoby()
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/559d7f9873b8d5083adbdc78902884f6")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/b681de49286779259a7fdeffff3dd1ce")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/c16e004e0e717314020faa28a2b8a86d")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/cb8dc1bb335b17c3b438713ac67d94d0")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/e50383de41346e6699c18f3f27b41f77")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/f17994480647c9079f3ab7fb5c6d4125")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/netease_httpdns_config_file.txt")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/mpay_oversea_sdk_336")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/device3247353318869876128")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/mpay_oversea_sdk_336")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/oversea5649352438464028632")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/oversea6748624719139167360")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/559d7f9873b8d5083adbdc78902884f6")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/b681de49286779259a7fdeffff3dd1ce")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/c16e004e0e717314020faa28a2b8a86d")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/cb8dc1bb335b17c3b438713ac67d94d0")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/e50383de41346e6699c18f3f27b41f77")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/f17994480647c9079f3ab7fb5c6d4125")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/a8510daaeaf882f26cc168803e6c4b25")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/mpay_oversea_sdk_336")
+    os.remove("/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/559d7f9873b8d5083adbdc78902884f6")
+    os.remove("/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/b681de49286779259a7fdeffff3dd1ce")
+    os.remove("/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/c16e004e0e717314020faa28a2b8a86d")
+    os.remove("/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/cb8dc1bb335b17c3b438713ac67d94d0")
+    os.remove("/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/e50383de41346e6699c18f3f27b41f77")
+    os.remove("/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/f17994480647c9079f3ab7fb5c6d4125")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/559d7f9873b8d5083adbdc78902884f6")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/b681de49286779259a7fdeffff3dd1ce")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/c16e004e0e717314020faa28a2b8a86d")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/cb8dc1bb335b17c3b438713ac67d94d0")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/e50383de41346e6699c18f3f27b41f77")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/f17994480647c9079f3ab7fb5c6d4125")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/netease_httpdns_config_file.txt")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/559d7f9873b8d5083adbdc78902884f6")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/b681de49286779259a7fdeffff3dd1ce")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/rootfs/storage/emulated/0/Android/data/com.netease.newspike/cache/mpay/336/c16e004e0e717314020faa28a2b8a86d")
+    os.remove("/storage/emulated/0/Android/data/com.amy.virtual.pro/files/External/0/com.netease.newspike/files/ccmini/db/common")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/device3247353318869876128")
+    os.remove("/storage/emulated/0/netease/mpay/oversea/preference/a8510daaeaf882f26cc168803e6c4b25/mpay_oversea_sdk_336")
+    os.remove("/storage/emulated/0/netease/newspike/logs/report.log")
+    os.remove("/storage/emulated/0/netease/newspike/logs/anticheat.log")
+    os.remove("/storage/emulated/0/netease/newspike/config/ban_status.txt")
+    os.remove("/storage/emulated/0/netease/newspike/config/security_flags.json")
+    _ENV["gg"]["toast"]("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+ 
+  function AimAssist()
+    aim = gg.prompt({
+       "𝙰𝙸𝙼 𝙰𝚂𝚂𝙸𝚂𝚃 𝙰𝙳𝙹𝚄𝚂𝚃 \n 𝚁𝚎𝚌𝚘𝚖𝚖𝚎𝚗𝚍𝚎𝚍 𝟼𝟻 [1; 500]"
+    }, nil, {
+      "number"
+    })
+    LibStart = gg.getRangesList("libGame.so")[1].start
+    Fubuki = {}
+    Fubuki[1] = {}
+    Fubuki[1].address = LibStart + 23579504
+    Fubuki[1].value = "h2 95 C7 F3 F0 00 08 03 F2 73 80 3F"
+    Fubuki[1].flags = 32
+    gg.setValues(Fubuki)
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function lMagicBulletLb()
+    io.open(gg.EXT_CACHE_DIR .. "/crack.txt", "w+"):write([[
+13196
+Var #735A45C89C|735a45c89c|10|3f828f5c|0|0|0|0|rw-p|/data/app/~~1bnbj68Av5tKUJbJgDdB3w==/com.netease.newspike-yrZzrvhLRlwmrQqFypkPAQ==/lib/arm64/libGame.so:bss|1989c
+]]):close()
+    gg.loadList(gg.EXT_CACHE_DIR .. "/crack.txt", gg.LOAD_VALUES)
+    io.open(gg.EXT_CACHE_DIR .. "/crack.txr", "w+"):write(string.char()):close()
+    gg.processResume()
+    gg.clearResults()
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function MagicBulletLb()
+gg.setRanges(gg.REGION_OTHER)
+gg.searchNumber("0.11999999732", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("0.11999999732", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.getResults(500, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("0.3", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+gg.clearResults()
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+  
+  
+  function MagicBulletGm()
+    io.open(gg.EXT_CACHE_DIR .. "/crack.txt", "w+"):write([[
+13996
+Var #734BF1289C|734bf1289c|10|3f8147ae|0|0|0|0|rw-p|/data/app/~~iM4PotWopHG44csn4JVYxQ==/com.netease.newspike-uHbNvLdQPdzlBfwfqRNc7A==/lib/arm64/libGame.so:bss|1989c
+]]):close()
+    gg.loadList(gg.EXT_CACHE_DIR .. "/crack.txt", gg.LOAD_VALUES)
+    io.open(gg.EXT_CACHE_DIR .. "/crack.txr", "w+"):write(string.char()):close()
+    gg.processResume()
+    gg.clearResults()
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function LessRecoil()
+    io.open(gg.EXT_CACHE_DIR .. "/crack.txt", "w+"):write([[
+18949
+Var #734BE83940|734be83940|10|d01502f9|0|0|0|0|r-xp|/data/app/~~iM4PotWopHG44csn4JVYxQ==/com.netease.newspike-uHbNvLdQPdzlBfwfqRNc7A==/lib/arm64/libGame.so|1680940
+]]):close()
+    gg.loadList(gg.EXT_CACHE_DIR .. "/crack.txt", gg.LOAD_VALUES)
+    io.open(gg.EXT_CACHE_DIR .. "/crack.txr", "w+"):write(""):close()
+    gg.processResume()
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function BulletSpread()
+    io.open(gg.EXT_CACHE_DIR .. "/crack.txt", "w+"):write([[
+3064
+Var #7A1B74E36C|7a1b74e36c|10|100000|0|0|0|0|rw-p|/data/app/~~iM4PotWopHG44csn4JVYxQ==/com.netease.newspike-uHbNvLdQPdzlBfwfqRNc7A==/lib/arm64/libGame.so:bss|1436c
+]]):close()
+    gg.loadList(gg.EXT_CACHE_DIR .. "/crack.txt", gg.LOAD_VALUES)
+    io.open(gg.EXT_CACHE_DIR .. "/crack.txr", "w+"):write(""):close()
+    gg.processResume()
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function ExplosifDmg()
+    io.open(gg.EXT_CACHE_DIR .. "/crack.txt", "w+"):write([[
+3064
+Var #7A1B74E36C|7a1b74e36c|10|1,99999|0|0|0|0|rw-p|/data/app/~~iM4PotWopHG44csn4JVYxQ==/com.netease.newspike-uHbNvLdQPdzlBfwfqRNc7A==/lib/arm64/libGame.so:bss|1436c
+]]):close()
+    gg.loadList(gg.EXT_CACHE_DIR .. "/crack.txt", gg.LOAD_VALUES)
+    io.open(gg.EXT_CACHE_DIR .. "/crack.txr", "w+"):write(""):close()
+    gg.processResume()
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function NoRecoil2()
+    gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1.03499996662", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("1.03499996662", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.getResults(1000)
+gg.editAll("0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("🟢 𝙽𝙾 𝚁𝙴𝙲𝙾𝙸𝙻 100% [ON]")
+gg.clearResults()
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function BodyColor()
+    LibStart = gg.getRangesList("libGame.so")[1].start
+    Fubuki = nil
+    Fubuki = {}
+    Fubuki[1] = {}
+    Fubuki[1] = {}
+    Fubuki[1].address = LibStart + 23786248
+    Fubuki[1].value = "0,17700000107"
+    Fubuki[1].flags = 32
+    gg.setValues(Fubuki)
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function Smooth()
+    LibStart = gg.getRangesList("libGame.so")[1].start
+    Fubuki = nil
+    Fubuki = {}
+    Fubuki[1] = {}
+    Fubuki[1] = {}
+    Fubuki[1].address = LibStart + 23572216
+    Fubuki[1].value = "h CD CC CC 3E"
+    Fubuki[1].flags = 32
+    gg.setValues(Fubuki)
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function DamageBuff()
+    LibStart = gg.getRangesList("libGame.so")[1].start
+    Fubuki = nil
+    Fubuki = {}
+    Fubuki[1] = {}
+    Fubuki[1] = {}
+    Fubuki[1].address = LibStart + 498398704900
+    Fubuki[1].value = "hE17A843F"
+    Fubuki[1].flags = 4
+    gg.setValues(Fubuki)
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function fps()
+    LibStart = gg.getRangesList("libGame.so")[1].start
+    Fubuki = nil
+    Fubuki = {}
+    Fubuki[1] = {}
+    Fubuki[1] = {}
+    Fubuki[1].address = LibStart + 3019637864
+    Fubuki[1].value = "100100004673"
+    Fubuki[1].flags = 16
+    gg.setValues(Fubuki)
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪 
+  
+  function ClearLag()
+    os.remove("/storage/emulated/0/netease/newspike/logs/report.log")
+    os.remove("/storage/emulated/0/netease/newspike/logs/anticheat.log")
+    os.remove("/storage/emulated/0/netease/newspike/config/ban_status.txt")
+    os.remove("/storage/emulated/0/netease/newspike/config/security_flags.json")
+    gg.clearResults()
+    gg.toast("🔥 𝕍𝔼𝕃𝕃𝕀𝕏 🔥")
+  end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+function exitScript()
+
+    gg.alert("©Hack\n©YouTube : VELLIX_AO\n©Fb: Kurol watu\n©Subscribe Channel Free")
+    os.exit()
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+
+while true do
+    if gg.isVisible(true) then
+        gg.setVisible(false)
+        IDX()
+    end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
+    gg.sleep(100)
+end ----𝑫𝒆𝒄 𝑩𝒚 @𝑵𝑬𝑶𝒗𝒓𝒋 @𝑵𝑬𝑶_𝑫𝑬𝑪
