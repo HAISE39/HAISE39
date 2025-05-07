@@ -1,0 +1,1454 @@
+gg.setVisible(false)
+modbyfami = os.date ('           ⚡MODMENU BY VELLIX⚡\
+\
+           ❦ ════ •⊰❂ - ❂⊱• ════ ❦\
+\
+📆Dᴀᴛᴇ📆 : %Y/%m/%d\
+\
+🕛Tɪᴍᴇ🕛 : %H:%M:%S\
+\
+⏳Exᴘɪʀᴇᴅ Sᴄʀɪᴘᴛ⏳ : 0000/00/00\
+\
+           ❦ ════ •⊰❂ - ❂⊱• ════ ❦')
+gg.alert(modbyfami)
+gg.setVisible(true)
+
+----made with niggardly x kiune
+
+function setMemoryValue(address, flags, value)
+    gg.setValues({{address = address, flags = flags, value = value}})
+end
+
+function applyPatch(library, offset, edit, type)
+    local ranges = gg.getRangesList(library)
+    if #ranges > 0 then 
+        setMemoryValue(ranges[1].start + offset, type, edit)
+    else 
+    end
+end
+
+function setValues(address, flags, value)
+    setMemoryValue(address, flags, value)
+end
+
+function czk(Search, Write, Type)
+  gg.clearResults()
+  gg.setVisible(false)
+  gg.searchNumber(Search[1][1], Type)
+  local count = gg.getResultCount()
+  local result = gg.getResults(count)
+  gg.clearResults()
+  local data = {}
+  local base = Search[1][2]
+  if count > 0 then
+    do
+      do
+        for _FORV_10_, _FORV_11_ in ipairs(result) do
+          _FORV_11_.isUseful = true
+        end
+      end
+    end
+    do
+      do
+        for _FORV_10_ = 2, #Search do
+          local tmp = {}
+          local offset = Search[_FORV_10_][2] - base
+          local num = Search[_FORV_10_][1]
+          do
+            do
+              for _FORV_17_, _FORV_18_ in ipairs(result) do
+                tmp[#tmp + 1] = {}
+                tmp[#tmp].address = _FORV_18_.address + offset
+                tmp[#tmp].flags = _FORV_18_.flags
+              end
+            end
+          end
+          tmp = gg.getValues(tmp)
+          do
+            for _FORV_17_, _FORV_18_ in ipairs(tmp) do
+              if tostring(_FORV_18_.value) ~= tostring(num) then
+                result[_FORV_17_].isUseful = false
+              end
+            end
+          end
+        end
+      end
+    end
+    do
+      do
+        for _FORV_10_, _FORV_11_ in ipairs(result) do
+          if _FORV_11_.isUseful then
+            data[#data + 1] = _FORV_11_.address
+          end
+        end
+      end
+    end
+    if #data > 0 then
+      gg.toast("Results " .. #data .. " Edited")
+      local t = {}
+      local base = Search[1][2]
+      do
+        do
+          for _FORV_12_ = 1, #data do
+            do
+              for _FORV_16_, _FORV_17_ in ipairs(Write) do
+                offset = _FORV_17_[2] - base
+                t[#t + 1] = {}
+                t[#t].address = data[_FORV_12_] + offset
+                t[#t].flags = Type
+                t[#t].value = _FORV_17_[1]
+                if _FORV_17_[3] == true then
+                  local item = {}
+                  item[#item + 1] = t[#t]
+                  item[#item].freeze = true
+                  gg.addListItems(item)
+                end
+              end
+            end
+          end
+        end
+      end
+      gg.setValues(t)
+    else
+      return false
+    end
+  else
+    return false
+  end
+end
+
+
+
+local HexPatches = {}
+function HexPatches.MemoryPatch(Lib, Offset, Edit, Type)
+    local Ranges = gg.getRangesList(Lib)
+    if #Ranges > 0 then
+        local v = {}
+        v[1] = {}
+        v[1].address = Ranges[1].start + Offset
+        v[1].flags = Type
+        v[1].value = Edit
+        v[1].freeze = true
+        gg.setValues(v)
+    else
+    end
+end
+
+
+
+
+
+running = true
+TEMPLATE = 1
+
+function home()
+    local q = gg.choice({
+    "𝐁𝐲𝐩𝐚𝐬𝐬 [ 𝐈𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭 ]", 
+    "𝐇𝐚𝐜𝐤𝐬",
+    "𝐎𝐭𝐡𝐞𝐫 𝐁𝐫𝐮𝐭𝐚𝐥 𝐇𝐚𝐜𝐤𝐬",
+    "𝐆𝐚𝐦𝐞 𝐁𝐨𝐨𝐬𝐭𝐞𝐫", 
+    "𝐒𝐩𝐞𝐜𝐭𝐚𝐭𝐨𝐫 [ 𝐌𝐩/𝐁𝐫",
+    "𝐁𝐥𝐚𝐜𝐤 𝐒𝐤𝐲 [ 𝐌𝐩 𝐎𝐧𝐥𝐲 ]",
+    "𝐖𝐚𝐥𝐥𝐬𝐡𝐨𝐭 [ 𝐎𝐧𝐜𝐞 𝐈𝐧𝐠𝐚𝐦𝐞 ]",
+    "𝐄𝐱𝐢𝐭",
+    }, nil, os.date("𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: VELLIXAO\n📆 Date: %A, %B %d %Y\n⏲️ Time: %I:%M %p\nVersion 1.6.49"))
+    if q == nil then return end
+    if q == 1 then bypass() end
+    if q == 2 then hack() end
+    if q == 3 then brutal() end
+    if q == 4  then boost() end
+    if q ==5 then spectator() end
+    if q == 6 then blacksky() end
+    if q == 7 then wallshot() end
+    if q == 8 then EXIT() end
+    TEMPLATE = -1
+end
+
+function bypass() 
+local pogi = gg.multiChoice({
+	"𝐁𝐲𝐩𝐚𝐬𝐬 [ 𝐆𝐚𝐫𝐞𝐧𝐚 𝐋𝐨𝐠𝐨 ]",
+	"Bypass Nigga Hold Eport",
+	"𝐂𝐥𝐞𝐚𝐫 𝐋𝐨𝐠𝐬", 
+	" 𝐁𝐚𝐜𝐤", 
+	}, nil, "Activated This Before Hacks!") 
+	if pogi == nil then return end
+	gg.setVisible(false) 
+	
+	
+	if pogi[1] == true then logo() end
+	if pogi[2] == true then hold() end
+	if pogi[3] == true then logs() end
+	if pogi[4] == true then home() end
+	end
+	
+function logo()
+    HexPatches.MemoryPatch("libanogs.so", 0x118A28, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x134EF8, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x1A4D08, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x3DA1C8, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x2B5CD4, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x2E4A08, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x2F1400, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x2F5930, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x21B4A8, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x21BB64, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x25C338, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x429CF0, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x427B28, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x429CF0, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x427B28, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x42A92C, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x42C9F4, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x424AEC, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x439F28, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x428670, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x427170, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x3F9964, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x4273D0, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x42AB04, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x42BFF0, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x42F230, "h 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x42AEE8, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x424218, "h 00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x134EFC, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x2063FC, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x206400, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x28969C, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x2896A0, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x2896A4, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x28EB60, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x28EB64, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x2B58C0, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x2B58C4, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x342788, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x34278C, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x3E431C, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x3E4320, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x3E4C28, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x3E4C2C, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x3F2E64, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libanogs.so", 0x3F2E68, "h00 00 80 D2 C0 03 5F D6", 32);
+    gg.toast("Bypass Activated ✔️")
+end
+
+function hold()
+    HexPatches.MemoryPatch("libanogs.so", 0x1F4A3, "64 00 00 00")
+    HexPatches.MemoryPatch("libanogs.so", 0x1F4B0, "64 00 00 00")
+    HexPatches.MemoryPatch("libanogs.so", 0x1F4BD, "64 00 00 00")
+    HexPatches.MemoryPatch("libanogs.so", 0x1F4CA, "64 00 00 00")
+    HexPatches.MemoryPatch("libanogs.so", 0x1F4D7, "64 00 00 00")
+    gg.toast("Bypass Hold Report ✔️")
+end
+
+function logs()
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/codm_4_2_39.dat")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/comm.dat")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/config2.xml.9d1921ad")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/config3.xml")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/mn_cache.dat")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/mrpcs_a.data")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/shellcode_1021")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/tdm_cache.dat")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/tss.ano2.dat")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/tss_cef.dat")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/tss_emu_c2.dat")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/tss_lcp.dat")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/tss_r_record.dat")
+os.remove("/data/data/com.garena.game.codm/files/tss_tmp/tssmua.zip")
+os.remove("/storage/emulated/0/Android/data/com.garena.game.codm/cache")
+os.remove("/storage/emulated/0/tencent/Midas/Log/com.garena.game.codm")
+os.remove("src/HexPatches.MemoryPatchn/java/com/google/errorprone/annotations")
+os.remove("src/HexPatches.MemoryPatchn/java/com/google/errorprone/annotations")
+os.remove("src/HexPatches.MemoryPatchn/java/com/google/errorprone/annotations/concurrent")
+os.remove("third_party.java_src.error_prone.project.annotations.Google_internal")
+gg. toast("Clear Logs ✔") 
+end
+
+
+
+function hack()
+    local pogi = gg.multiChoice({
+        "𝐀𝐢𝐦𝐛𝐨𝐭 [ 𝐀𝐝𝐣𝐮𝐬𝐭𝐚𝐛𝐥𝐞 ]",
+        "𝐀𝐢𝐦𝐛𝐨𝐭 [ 𝟏𝟖𝟎 ",
+        "Aimbot [ Strong ]",
+        "𝐀𝐢𝐦𝐛𝐨𝐭 [ 𝐒𝐦𝐨𝐨𝐭𝐡 ]", 
+        " 𝐖𝐚𝐥𝐥𝐡𝐚𝐜𝐤 [ 𝐘/𝐁 ]",
+        "𝐖𝐚𝐥𝐥𝐡𝐚𝐜𝐤 [ 𝐑𝐞𝐝 ]",
+        "𝐀𝐭𝐡𝐞𝐧𝐚 [ 𝐑𝐚𝐧𝐝𝐨𝐦 𝐂𝐨𝐥𝐨𝐫 ]",
+        "Zealot", 
+        "𝐁𝐚𝐜𝐤", 
+    }, nil, "𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: VELLIXAO")
+
+    if pogi == nil then return end
+    gg.setVisible(false)
+    if pogi[1] == true then aimbot() end
+    if pogi[2] == true then aimbot180() end
+    if pogi[3] == true then highaimbot() end 
+    if pogi[4] == true then smooth_aim() end
+    if pogi[5] == true then wallhack() end
+    if pogi[6] == true then wallhackred() end
+    if pogi[7] == true then esp() end
+    if pogi[8] == true then ze() end
+    if pogi[8] == true then home() end
+    end
+
+function aimbot()
+    aimbot = gg.prompt({"Aim Lock Adjust Settings [10; 200]"}, nil, {"number"})
+    local so = gg.getRangesList("libunity.so")[1].start
+    setValues(so + 0x83d45a0, 4, "~A8 LDR  S0, [PC,#0x8]")
+    setValues(so + 0x83d45a0 + 0x4, 4, "~A8 RET")
+    setValues(so + 0x83d47a4, 4, "~A8 LDR  S0, [PC,#0x8]")
+    setValues(so + 0x83d47a4 + 0x4, 4, "~A8 RET")
+    setValues(so + 0x83d45a0 + 0x8, 16, aimbot[1])
+    setValues(so + 0x83d47a4 + 0x8, 16, aimbot[1])
+    gg.toast("AIMBOT ACTIVATED")
+end
+
+function aimbot180() 
+so = gg.getRangesList('libunity.so')[1].start -----[[© Leak By メㅤJᴜʟʟㅤ4Yᴏᴜ 亗 ]] -----
+py = 0x7AEDC04
+setValues(so + py, 4, "~A8 LDR  S0, [PC,#0x8]")
+so = gg.getRangesList('libunity.so')[1].start -----[[© Leak By メㅤJᴜʟʟㅤ4Yᴏᴜ 亗 ]] -----
+py = 0x7AEDC04 + 4
+setValues(so + py, 4, "~A8 RET")
+aimbot =gg.prompt({"AIMBOT ADJUSTABLE\n [0;999]"},nil,{"number"})
+so = gg.getRangesList('libunity.so')[1].start -----[[© Leak By メㅤJᴜʟʟㅤ4Yᴏᴜ 亗 ]] -----
+py = 0x7AEDC04 + 8
+setValues(so + py, 16, aimbot[1])
+local C_E_SS;
+local C_ESS = _G[type""]["char"];
+local _CESS = _G[type{}]["unpack"];
+(function(c3ss)
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber((function()
+C_E_SS = (C_ESS(_CESS({55, 46, 48, 48, 54, 52, 57, 50, 51, 50, 101, 45, 52, 53, 70, 59, 48, 46, 54, 57, 57, 57, 57, 57, 57, 56, 56, 48, 56, 70, 59, 48, 46, 54, 57, 57, 57, 57, 57, 57, 56, 56, 48, 56, 70, 59, 48, 46, 54, 57, 57, 57, 57, 57, 57, 56, 56, 48, 56, 70, 59, 48, 46, 54, 57, 57, 57, 57, 57, 57, 56, 56, 48, 56, 70, 59, 55, 46, 48, 48, 54, 52, 57, 50, 51, 50, 101, 45, 52, 53, 70, 59, 48, 46, 53, 70, 59, 48, 46, 53, 70, 59, 48, 46, 53, 70, 59, 48, 46, 54, 48, 48, 48, 48, 48, 48, 50, 51, 56, 52, 70, 59, 48, 46, 54, 48, 48, 48, 48, 48, 48, 50, 51, 56, 52, 70})));
+return C_E_SS;
+end)("\nc3ss"), gg.TYPE_FLOAT)
+gg.refineNumber((function()
+C_E_SS = (C_ESS(_CESS({48, 46, 53, 59, 48, 46, 54, 57, 57, 57, 57, 57, 57, 56, 56, 48, 56})));
+return C_E_SS;
+end)("\nc3ss"), gg. TYPE_FLOAT)
+revert = gg.getResults(9999, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll((function()
+C_E_SS = (C_ESS(_CESS({51, 53, 48})));
+return C_E_SS;
+end)("\nc3ss"), gg.TYPE_FLOAT)
+gg.clearResults()
+;end)()
+gg.toast("𝟭𝟴𝟬 𝗮𝗶𝗺𝗯??𝘁 𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲")
+end
+
+function highaimbot()
+HexPatches.MemoryPatch("libunity.so", 0x83d45a0, "h4000001C", 4);
+    HexPatches.MemoryPatch("libunity.so", 0x846BD38, "hC0035FD6", 4);
+    HexPatches.MemoryPatch("libunity.so", 0x846BD3C, "h00001643", 4);
+    HexPatches.MemoryPatch("libunity.so", 0x98887fc, "h4000001C", 4);
+    HexPatches.MemoryPatch("libunity.so", 0x96F9580, "hC0035FD6", 4);
+    HexPatches.MemoryPatch("libunity.so", 0x96F9584, "h00001643", 4);
+    gg.toast("Aimbot strong ✔️")
+    end
+    
+   function smooth_aim() 
+HexPatches.MemoryPatch("libunity.so", 0x83d45a0, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libunity.so", 0x846BD38, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libunity.so", 0x846BD3C, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libunity.so", 0x98887fc, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libunity.so", 0x96F9580, "h00 00 80 D2 C0 03 5F D6", 32);
+    HexPatches.MemoryPatch("libunity.so", 0x96F9584, "h00 00 80 D2 C0 03 5F D6", 32);
+gg.toast(" Smooth Aim Assist") 
+end
+
+function wallhack()
+
+HexPatches.MemoryPatch("libunity.so", 0x5b6daa8, "h1F 20 03 D5", 4)
+gg.toast("ᴡᴀʟʟʜᴀᴄᴋ ɢʟᴏᴡ✓")
+end
+
+function wallhackred()
+so = gg.getRangesList('libunity.so')[1].start
+wallhack = 0x83ffdd0
+    setValues(so + wallhack, 4, "~A8 MOV W0, #0x1")
+    gg.toast("ᴡᴀʟʟʜᴀᴄᴋ ʀᴇᴅ : ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+function esp()
+local ant1=gg.choice({
+"𝘼𝙉𝙏𝙀𝙉𝙉 𝙍𝙀𝘿 ",
+"𝘼𝙉𝙏𝙀𝙉𝙉𝘼 𝙋𝙄𝙉𝙆",
+"𝘼𝙉𝙏𝙀𝙉𝙉𝘼 𝘽𝙇𝙐𝙀 ",
+"??𝙉𝙏𝙀𝙉𝙉𝘼 𝘾𝙔𝘼𝙉",
+"𝘼??𝙏??𝙉𝙉?? 𝘽𝙇𝘼𝘾𝙆 ",
+"𝘼𝙉𝙏𝙀𝙉𝙉𝘼 𝙒𝙃𝙄𝙏𝙀",
+"𝘼𝙉𝙏𝙀𝙉𝙉𝘼 𝙂𝙍??𝙀𝙉 ",
+"𝘼𝙉𝙏𝙀𝙉𝙉𝘼 𝙋𝙐𝙍𝙋𝙇𝙀 ",
+"𝘼𝙉𝙏??𝙉𝙉𝘼 𝙔𝙀𝙇𝙇𝙊?? ",
+"𝘼𝙉𝙏𝙀𝙉𝙉𝘼 𝙊𝙍𝙍𝘼𝙉𝙂𝙀 ",
+"𝙇𝙄𝙂𝙃𝙏 𝙍𝙀𝘿",
+"𝙇𝙄𝙂𝙃𝙏 𝙋𝙄𝙉𝙆 ",
+"𝙇𝙄𝙂𝙃𝙏 𝘽𝙇𝙐𝙀",
+"𝙇𝙄𝙂𝙃𝙏 𝘾𝙔𝘼𝙉 ",
+"𝙇𝙄𝙂𝙃𝙏 𝙂𝙍𝙀𝙀𝙉 ",
+"ʙᴀᴄᴋ ",
+},nil,"ᴄᴀʟʟ ᴏғ ᴅᴜᴛʏ ɢᴀʀᴇɴᴀ\n📌ᴄʀᴇᴀᴛᴏʀ : VELLIXAO")
+if ant1==nil then return end
+if ant1==1 then red() end
+if ant1==2 then pink() end
+if ant1==3 then blue() end
+if ant1==4 then cyan() end
+if ant1==5 then black() end
+if ant1==6 then white() end
+if ant1==7 then green() end
+if ant1==8 then purple() end
+if ant1==9 then yellow() end
+if ant1==10 then orange() end
+if ant1==11 then red1() end
+if ant1==12 then pink1() end
+if ant1==13 then blue1() end
+if ant1==14 then cyan1() end
+if ant1==15 then green1() end
+if ant1==16 then home() end
+end
+
+function red()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax = 999
+ajlhax1 = 0
+ajlhax2 = 0
+ajlhax3 = 999
+ajlhax4 = 1
+ajlhax5 = 999
+ajlhax6 = 999
+ajlhax7 = 999
+ajlhax8 = 4
+local dataType = 16
+local Name = "ANTENNA RED"
+local tb1 = {{256.0, 0}, {3.0, 40}, {5.0, 68}}
+local tb2 = {{ajlhax, -80}, {ajlhax1, -76}, {ajlhax2, -72}, {ajlhax3, -68}, {ajlhax4, -64}, {ajlhax5, -28}, {ajlhax6, -24}, {ajlhax7, 28}, {ajlhax8, 20}}
+gg.setRanges(128)
+SearchWrite(tb1, tb2, dataType)
+gg.setRanges(4)
+SearchWrite(tb1, tb2, dataType)
+gg.toast("Antenna Red")
+end
+
+
+function pink()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax = 50
+ajlhax1 = 1
+ajlhax2 = 999
+ajlhax3 = 999
+ajlhax4 = 1
+ajlhax5 = 999
+ajlhax6 = 999
+ajlhax7 = 999
+ajlhax8 = 4
+local dataType = 16
+local Name = "ANTENNA PINK"
+local tb1 = {{256.0, 0}, {3.0, 40}, {5.0, 68}}
+local tb2 = {{ajlhax, -80}, {ajlhax1, -76}, {ajlhax2, -72}, {ajlhax3, -68}, {ajlhax4, -64}, {ajlhax5, -28}, {ajlhax6, -24}, {ajlhax7, 28}, {ajlhax8, 20}}
+gg.setRanges(128)
+SearchWrite(tb1, tb2, dataType)
+gg.setRanges(4)
+SearchWrite(tb1, tb2, dataType)
+gg.toast("Antenna Pink")
+end
+
+
+function blue()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax = 0
+ajlhax1 = 1
+ajlhax2 = 999
+ajlhax3 = 999
+ajlhax4 = 1
+ajlhax5 = 999
+ajlhax6 = 999
+ajlhax7 = 999
+ajlhax8 = 4
+local dataType = 16
+local Name = "ANTENNA BLUE"
+local tb1 = {{256.0, 0}, {3.0, 40}, {5.0, 68}}
+local tb2 = {{ajlhax, -80}, {ajlhax1, -76}, {ajlhax2, -72}, {ajlhax3, -68}, {ajlhax4, -64}, {ajlhax5, -28}, {ajlhax6, -24}, {ajlhax7, 28}, {ajlhax8, 20}}
+gg.setRanges(128)
+SearchWrite(tb1, tb2, dataType)
+gg.setRanges(4)
+SearchWrite(tb1, tb2, dataType)
+gg.toast("Antenna BLUE")
+end
+
+
+function cyan()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax = 0
+ajlhax1 = 999
+ajlhax2 = 999
+ajlhax3 = 999
+ajlhax4 = 1
+ajlhax5 = 999
+ajlhax6 = 999
+ajlhax7 = 999
+ajlhax8 = 4
+local dataType = 16
+local Name = "ANTENNA CYAN"
+local tb1 = {{256.0, 0}, {3.0, 40}, {5.0, 68}}
+local tb2 = {{ajlhax, -80}, {ajlhax1, -76}, {ajlhax2, -72}, {ajlhax3, -68}, {ajlhax4, -64}, {ajlhax5, -28}, {ajlhax6, -24}, {ajlhax7, 28}, {ajlhax8, 20}}
+gg.setRanges(128)
+SearchWrite(tb1, tb2, dataType)
+gg.setRanges(4)
+SearchWrite(tb1, tb2, dataType)
+end
+
+
+function black()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉??𝙀??𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax = 0
+ajlhax1 = 1
+ajlhax2 = 1
+ajlhax3 = 9999
+ajlhax4 = 0.1
+ajlhax5 = 999
+ajlhax6 = 999
+ajlhax7 = 999
+ajlhax8 = 4
+local dataType = 16
+local Name = "ANTENNA BLACK"
+local tb1 = {{256.0, 0}, {3.0, 40}, {5.0, 68}}
+local tb2 = {{ajlhax, -80}, {ajlhax1, -76}, {ajlhax2, -72}, {ajlhax3, -68}, {ajlhax4, -64}, {ajlhax5, -28}, {ajlhax6, -24}, {ajlhax7, 28}, {ajlhax8, 20}}
+gg.setRanges(128)
+SearchWrite(tb1, tb2, dataType)
+gg.setRanges(4)
+SearchWrite(tb1, tb2, dataType)
+gg.toast("Antenna Black")
+end
+
+
+function white()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax = 50
+ajlhax1 = 999
+ajlhax2 = 999
+ajlhax3 = 999
+ajlhax4 = 0.1
+ajlhax5 = 999
+ajlhax6 = 999
+ajlhax7 = 999
+ajlhax8 = 4
+local dataType = 16
+local Name = "ANTENNA WHITE"
+local tb1 = {{256.0, 0}, {3.0, 40}, {5.0, 68}}
+local tb2 = {{ajlhax, -80}, {ajlhax1, -76}, {ajlhax2, -72}, {ajlhax3, -68}, {ajlhax4, -64}, {ajlhax5, -28}, {ajlhax6, -24}, {ajlhax7, 28}, {ajlhax8, 20}}
+gg.setRanges(128)
+SearchWrite(tb1, tb2, dataType)
+gg.setRanges(4)
+SearchWrite(tb1, tb2, dataType)
+gg.toast("Antenna White")
+end
+
+function green()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax = 0
+ajlhax1 = 999
+ajlhax2 = 1
+ajlhax3 = 999
+ajlhax4 = 0.1
+ajlhax5 = 999
+ajlhax6 = 999
+ajlhax7 = 999
+ajlhax8 = 4
+local dataType = 16
+local Name = "ANTENNA GREEN"
+local tb1 = {{256.0, 0}, {3.0, 40}, {5.0, 68}}
+local tb2 = {{ajlhax, -80}, {ajlhax1, -76}, {ajlhax2, -72}, {ajlhax3, -68}, {ajlhax4, -64}, {ajlhax5, -28}, {ajlhax6, -24}, {ajlhax7, 28}, {ajlhax8, 20}}
+gg.setRanges(128)
+SearchWrite(tb1, tb2, dataType)
+gg.setRanges(4)
+SearchWrite(tb1, tb2, dataType)
+gg.toast("Antenna Green")
+end
+
+
+function purple()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax = 1
+ajlhax1 = 1
+ajlhax2 = 999
+ajlhax3 = 999
+ajlhax4 = 1
+ajlhax5 = 999
+ajlhax6 = 999
+ajlhax7 = 999
+ajlhax8 = 4
+local dataType = 16
+local Name = "ANTENNA PURPLE"
+local tb1 = {{256.0, 0}, {3.0, 40}, {5.0, 68}}
+local tb2 = {{ajlhax, -80}, {ajlhax1, -76}, {ajlhax2, -72}, {ajlhax3, -68}, {ajlhax4, -64}, {ajlhax5, -28}, {ajlhax6, -24}, {ajlhax7, 28}, {ajlhax8, 20}}
+gg.setRanges(128)
+SearchWrite(tb1, tb2, dataType)
+gg.setRanges(4)
+SearchWrite(tb1, tb2, dataType)
+gg.toast("Antenna Purple")
+end
+
+
+function yellow()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉?? 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax = 50
+ajlhax1 = 999
+ajlhax2 = 1
+ajlhax3 = 999
+ajlhax4 = 1
+ajlhax5 = 999
+ajlhax6 = 999
+ajlhax7 = 999
+ajlhax8 = 4
+local dataType = 16
+local Name = "ANTENNA WHITE"
+local tb1 = {{256.0, 0}, {3.0, 40}, {5.0, 68}}
+local tb2 = {{ajlhax, -80}, {ajlhax1, -76}, {ajlhax2, -72}, {ajlhax3, -68}, {ajlhax4, -64}, {ajlhax5, -28}, {ajlhax6, -24}, {ajlhax7, 28}, {ajlhax8, 20}}
+gg.setRanges(128)
+SearchWrite(tb1, tb2, dataType)
+gg.setRanges(4)
+SearchWrite(tb1, tb2, dataType)
+gg.toast("Antenna White")
+end
+
+
+function orange()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax = 50
+ajlhax1 = 8
+ajlhax2 = 1
+ajlhax3 = 999
+ajlhax4 = 1
+ajlhax5 = 999
+ajlhax6 = 999
+ajlhax7 = 999
+ajlhax8 = 4
+local dataType = 16
+local Name = "ANTENNA ORANGE"
+local tb1 = {{256.0, 0}, {3.0, 40}, {5.0, 68}}
+local tb2 = {{ajlhax, -80}, {ajlhax1, -76}, {ajlhax2, -72}, {ajlhax3, -68}, {ajlhax4, -64}, {ajlhax5, -28}, {ajlhax6, -24}, {ajlhax7, 28}, {ajlhax8, 20}}
+gg.setRanges(128)
+SearchWrite(tb1, tb2, dataType)
+gg.setRanges(4)
+SearchWrite(tb1, tb2, dataType)
+gg.toast("Antenna Orange")
+end
+
+
+function red1()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax=30
+ajlhax1=0
+ajlhax2=0
+ajlhax3=1
+ajlhax4=2
+ajlhax5=1
+ajlhax6=1
+ajlhax7=1
+ajlhax8=64
+local dataType=16
+local Name="LIGHT RED"
+local tb1={{256.0,0},{3.0,40},{5.0,68}}
+local tb2={{ajlhax,-80},{ajlhax1,-76},{ajlhax2,-72},{ajlhax3,-68},{ajlhax4,-64},{ajlhax5,-28},{ajlhax6,-24},{ajlhax7,28},{ajlhax8,20}}
+gg.setRanges(128)
+SearchWrite(tb1,tb2,dataType)
+gg.setRanges(4)
+SearchWrite(tb1,tb2,dataType)
+gg.toast("Light Red")
+end
+
+
+function pink1()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax=1
+ajlhax1=1
+ajlhax2=999
+ajlhax3=1
+ajlhax4=2
+ajlhax5=1
+ajlhax6=1
+ajlhax7=1
+ajlhax8=64
+local dataType=16
+local Name="LIGHT PINK"
+local tb1={{256.0,0},{3.0,40},{5.0,68}}
+local tb2={{ajlhax,-80},{ajlhax1,-76},{ajlhax2,-72},{ajlhax3,-68},{ajlhax4,-64},{ajlhax5,-28},{ajlhax6,-24},{ajlhax7,28},{ajlhax8,20}}
+gg.setRanges(128)
+SearchWrite(tb1,tb2,dataType)
+gg.setRanges(4)
+SearchWrite(tb1,tb2,dataType)
+gg.toast("Light Pink")
+end
+
+
+function blue1()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉??𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax=0
+ajlhax1=1
+ajlhax2=999
+ajlhax3=1
+ajlhax4=2
+ajlhax5=1
+ajlhax6=1
+ajlhax7=1
+ajlhax8=64
+local dataType=16
+local Name="LIGHT BLUE"
+local tb1={{256.0,0},{3.0,40},{5.0,68}}
+local tb2={{ajlhax,-80},{ajlhax1,-76},{ajlhax2,-72},{ajlhax3,-68},{ajlhax4,-64},{ajlhax5,-28},{ajlhax6,-24},{ajlhax7,28},{ajlhax8,20}}
+gg.setRanges(128)
+SearchWrite(tb1,tb2,dataType)
+gg.setRanges(4)
+SearchWrite(tb1,tb2,dataType)
+gg.toast("Light Blue")
+end
+
+
+function cyan1()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax=0
+ajlhax1=999
+ajlhax2=999
+ajlhax3=1
+ajlhax4=2
+ajlhax5=1
+ajlhax6=1
+ajlhax7=1
+ajlhax8=64
+local dataType=16
+local Name="LIGHT CYAN"
+local tb1={{256.0,0},{3.0,40},{5.0,68}}
+local tb2={{ajlhax,-80},{ajlhax1,-76},{ajlhax2,-72},{ajlhax3,-68},{ajlhax4,-64},{ajlhax5,-28},{ajlhax6,-24},{ajlhax7,28},{ajlhax8,20}}
+gg.setRanges(128)
+SearchWrite(tb1,tb2,dataType)
+gg.setRanges(4)
+SearchWrite(tb1,tb2,dataType)
+gg.toast("Light Cyan")
+end
+
+function green1()
+function SearchWrite(Search, Write, Type) gg.clearResults() gg.setVisible(false) gg.searchNumber(Search[1][1], Type) local count = gg.getResultCount() if count == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end local result = gg.getResults(count) gg.clearResults() local data = {} local base = Search[1][2] for i, v in ipairs(result) do v.isUseful = true end for k = 2, #Search do local tmp = {} local offset = Search[k][2] - base local num = Search[k][1] for i, v in ipairs(result) do table.insert(tmp, { address = v.address + offset, flags = v.flags }) end tmp = gg.getValues(tmp) for i, v in ipairs(tmp) do if tostring(v.value) ~= tostring(num) then result[i].isUseful = false end end end for i, v in ipairs(result) do if v.isUseful then table.insert(data, v.address) end end if #data == 0 then gg.toast('𝘼𝙉𝙏𝙀𝙉𝙉𝘼 50') return false end gg.toast('VALUE FOUND ' .. #data .. ' EDITED') local t = {} for i = 1, #data do for k, w in ipairs(Write) do local offset = w[2] - base local item = { address = data[i] + offset, flags = Type, value = w[1] } if w[3] then item.freeze = true gg.addListItems({ item }) end table.insert(t, item) end end gg.setValues(t) end
+ajlhax=0
+ajlhax1=999
+ajlhax2=1
+ajlhax3=1
+ajlhax4=2
+ajlhax5=1
+ajlhax6=1
+ajlhax7=1
+ajlhax8=64
+local dataType=16
+local Name="LIGHT GREEN"
+local tb1={{256.0,0},{3.0,40},{5.0,68}}
+local tb2={{ajlhax,-80},{ajlhax1,-76},{ajlhax2,-72},{ajlhax3,-68},{ajlhax4,-64},{ajlhax5,-28},{ajlhax6,-24},{ajlhax7,28},{ajlhax8,20}}
+gg.setRanges(128)
+SearchWrite(tb1,tb2,dataType)
+gg.setRanges(4)
+SearchWrite(tb1,tb2,dataType)
+gg.toast("Light Green")
+end
+
+function ze()
+gg.setRanges(gg.REGION_ANONYMOUS) 
+gg.searchNumber("200000652", gg.TYPE_DWORD)
+gg.getResults(10000)
+gg.editAll("602000042", gg.TYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS) 
+gg.searchNumber("200010069", gg.TYPE_DWORD)
+gg.getResults(10000)
+gg.editAll("200010129", gg.TYPE_DWORD)
+gg.setRanges(gg.REGION_ANONYMOUS) 
+gg.searchNumber("200010053", gg.TYPE_DWORD)
+gg.getResults(10000)
+gg.editAll("2000000653", gg.TYPE_DWORD)
+gg.toast("ᴢᴇᴀʟᴏᴛ ᴅʟǫ ᴅᴏɴᴇ")
+end
+
+
+function brutal()
+    local graps = gg.multiChoice({ 
+        "𝐁𝐮𝐟𝐟 𝐃𝐚𝐦𝐚𝐠𝐞",
+        "𝐇𝐢𝐭𝐛𝐨𝐱",
+        "𝐅𝐚𝐬𝐭 𝐒𝐧𝐨𝐰𝐛𝐲 [ 𝐁𝐫 𝐎𝐧𝐥𝐲 ]",
+        "𝐍𝐨 𝐑𝐞𝐜𝐨𝐢𝐥",
+        "𝐅𝐚𝐬𝐭 𝐒𝐜𝐨𝐩𝐞",
+        "𝐅𝐚𝐬𝐭 𝐒𝐡𝐨𝐨𝐭 𝐒𝐫",
+        "𝐅𝐚𝐬𝐭 𝐒𝐰𝐢𝐭𝐜𝐡",
+        "𝐅𝐚𝐬𝐭 𝐒𝐰𝐢𝐦",
+        "𝐍𝐨 𝐅𝐥𝐚𝐬𝐡 𝐛𝐚𝐧𝐠",
+        "𝐔𝐧𝐥𝐢 𝐚𝐦𝐦𝐨",
+        "𝐍𝐨 𝐏𝐚𝐫𝐚𝐜𝐡𝐮𝐭𝐞 [ 𝐁𝐫 𝐎𝐧𝐥𝐲 ]",
+        " 𝐌𝐨𝐯𝐞𝐦𝐞𝐧𝐭 𝐓𝐡𝐞 𝐖𝐚𝐭𝐞𝐫 [ 𝐁𝐫 𝐎𝐧𝐥𝐲 ]",
+        "𝐍𝐨 𝐒𝐦𝐨𝐤𝐞",
+        "𝐍𝐨 𝐒𝐩𝐫𝐞𝐚𝐝",
+        "𝐒𝐩𝐞𝐞𝐝 𝐇𝐚𝐜𝐤 [ 𝐀𝐝𝐣𝐮𝐬𝐭𝐚𝐛𝐥𝐞 ]",
+        "𝐅𝐚𝐬𝐭 𝐑𝐞𝐥𝐨𝐚𝐝",
+        " 𝐇𝐢𝐠𝐡 𝐏𝐮𝐦𝐩 [ 𝐁𝐫 𝐎𝐧𝐥𝐲 ]",
+        "𝐋𝐨𝐧𝐠 𝐄𝐱𝐞𝐜𝐮𝐭𝐞 [ 𝐋𝐨𝐧𝐠 𝐑𝐚𝐧𝐠𝐞 ]", 
+        "𝐋𝐨𝐧𝐠 𝐄𝐱𝐞𝐜𝐮𝐭𝐞 [ 𝐍𝐨𝐫𝐦𝐚𝐥 ]",
+        " 𝐈𝐧𝐟𝐢𝐧𝐢𝐭𝐞 𝐒𝐥𝐢𝐝𝐞", 
+        "𝐇𝐢𝐠𝐡 𝐉𝐮𝐦𝐩 [ 𝐁𝐫/𝐌𝐩", 
+        " 𝐇𝐢𝐠𝐡 𝐏𝐨𝐯", 
+        "𝐍𝐨 𝐒𝐡𝐚𝐤𝐞",
+        "𝐀𝐝𝐯𝐚𝐧𝐜𝐞 𝐔𝐚𝐯 [ 𝐌𝐩 𝐎𝐧𝐥𝐲 ]",
+        "𝐏𝐨𝐯 𝐂𝐮𝐫𝐯𝐞",
+        "𝐀𝐢𝐦 𝐀𝐬𝐬𝐢𝐬𝐭 [ 𝐒𝐧𝐢𝐩𝐞𝐫 𝐁𝐫𝐮𝐭𝐚𝐥 ]",
+        "𝐋𝐨𝐧𝐠 𝐒𝐥𝐢𝐝𝐞",
+        "𝐁𝐚𝐜𝐤" 
+    }, nil, "𝐂𝐫𝐞𝐝𝐢𝐭𝐬: VELLIXAO")
+
+    if graps == nil then return end
+    gg.setVisible(false)
+    
+    if graps[1] == true then buff() end
+    if graps[2] == true then hitbox() end
+    if graps[3] == true then snowb() end
+    if graps[4] == true then recoil() end
+    if graps[5] == true then fastscope() end
+    if graps[6] == true then fastshoot() end
+    if graps[7] == true then fastswitch() end
+    if graps[8] == true then fastswim() end
+    if graps[9] == true then noflash() end
+    if graps[10] == true then unliammo() end
+    if graps[11] == true then parachute() end
+    if graps[12] == true then underwater() end
+    if graps[13] == true then nosm() end
+    if graps[14] == true then nospread() end
+    if graps[15] == true then speed() end
+    if graps[16] == true then fastreload() end
+    if graps[17] == true then highpump() end
+    if graps[18] == true then longex() end
+    if graps[19] == true then longexe() end
+    if graps[20] == true then slide() end
+    if graps[21] == true then jump() end
+    if graps[22] == true then highpov() end
+    if graps[23] == true then noshake() end
+    if graps[24] == true then uav() end
+    if graps[25] == true then curve() end
+    if graps[26] == true then sniper() end
+    if graps[27] == true then longslide() end
+    if graps[28] == true then home() end
+end
+
+
+
+function buff()
+HexPatches.MemoryPatch("libunity.so", 0x85b4ccc, "h20 00 80 D2 C0 03 5F D6", 32)
+gg.toast("ʙᴜғғ ᴅᴀᴍᴀɢᴇ: ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+
+function hitbox()
+il2cpp = gg.getRangesList('libunity.so')[1].start
+Hitbox1 = 0x85831f4
+setValues(il2cpp + Hitbox1, 4, "~A8 MOV  X0, #0x9")
+setValues(il2cpp + Hitbox1 + 0x4, 4, "~A8 RET")
+gg.toast("ʜɪᴛʙᴏx : ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+
+
+
+function snowb()
+speed = gg.prompt({"sɴᴏᴡʙᴏᴀʀᴅ ʙᴏᴏsᴛ ᴀᴅᴊᴜsᴛᴀʙʟᴇ [1; 150]"}, nil, {"number"})
+so = gg.getRangesList('libunity.so')[1].start
+py = 0x655206c
+setValues(so + py, 32, "h4000001CC0035FD6")
+setValues(so + py + 4, 32, "hC0035FD600007A44")
+setValues(so + py + 8, 16, speed[1])
+so = gg.getRangesList('libunity.so')[1].start
+py = 0x6552114
+setValues(so + py, 32, "h4000001CC0035FD6")
+setValues(so + py + 4, 32, "hC0035FD600007A44")
+setValues(so + py + 8, 16, speed[1])
+gg.toast("  sɴᴏᴡʙᴏᴀʀᴅ ʙᴏᴏsᴛ : ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+function recoil() 
+il2cppt = gg.getRangesList('libunity.so')[1].start
+    Rapidfiret1 = 0x85bb9f0
+        setValues(il2cppt + Rapidfiret1, 4, "~A8 LDR  S0, [PC,#0x8]")
+        setValues(il2cppt + Rapidfiret1 + 0x4, 4, "~A8 RET")
+        setValues(il2cppt + Rapidfiret1 + 0x8, 16, 0.0001)
+gg.toast("No recoil activated")
+end
+
+function fastscope()
+so = gg.getRangesList('libunity.so')[1].start
+    Rapidfire1 = 0x986245c
+    Rapidfire2 = 0x9862350
+        setValues(so + Rapidfire1, 4, "~A8 LDR  S0, [PC,#0x8]")
+        setValues(so + Rapidfire1 + 0x4, 4, "~A8 RET")
+        setValues(so  + Rapidfire1 + 0x8, 16, 0.00001)
+        setValues(so + Rapidfire2, 4, "~A8 LDR  S0, [PC,#0x8]")
+        setValues(so + Rapidfire2 + 0x4, 4, "~A8 RET")
+        setValues(so + Rapidfire2 + 0x8, 16, 0.00001)
+        gg.toast("ғᴀsᴛ sᴄᴏᴘᴇ : ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+
+function fastshoot()
+il2cpp = gg.getRangesList('libunity.so')[1].start
+    Rapidfire1 = 0x989e830
+    Rapidfire2 = 0x857a7a0
+    Rapidfire3 = 0x98aef44
+        setValues(il2cpp + Rapidfire1, 4, "~A8 LDR  S0, [PC,#0x8]")
+        setValues(il2cpp + Rapidfire1 + 0x4, 4, "~A8 RET")
+        setValues(il2cpp + Rapidfire1 + 0x8, 16, 0.0001)
+        setValues(il2cpp + Rapidfire2, 4, "~A8 LDR  S0, [PC,#0x8]")
+        setValues(il2cpp + Rapidfire2 + 0x4, 4, "~A8 RET")
+        setValues(il2cpp + Rapidfire2 + 0x8, 16, 0.01)
+        setValues(il2cpp + Rapidfire3, 4, "~A8 LDR  S0, [PC,#0x8]")
+        setValues(il2cpp + Rapidfire3 + 0x4, 4, "~A8 RET")
+gg.toast("ꜰᴀꜱᴛ ꜱʜᴏᴏᴛ ꜱʀ : ᴀᴄᴛɪᴠᴀᴛᴇᴅ ✔️")
+end
+
+
+
+function fastswitch()
+il2cpp = gg.getRangesList('libunity.so')[1].start
+Fastswitch1 = 0x9864bcc
+Fastswitch2 = 0x9864de4
+setValues(il2cpp + Fastswitch1, 4, "~A8 LDR  S0, [PC,#0x8]")
+setValues(il2cpp + Fastswitch1 + 0x4, 4, "~A8 RET")
+setValues(il2cpp + Fastswitch1 + 0x8, 16, 0.00001)
+setValues(il2cpp + Fastswitch2, 4, "~A8 LDR  S0, [PC,#0x8]")
+setValues(il2cpp + Fastswitch2 + 0x4, 4, "~A8 RET")
+setValues(il2cpp + Fastswitch2 + 0x8, 16, 0.00001)
+gg.toast("ꜰᴀꜱᴛ ꜱᴡɪᴛᴄʜ : ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+
+function fastswim()
+HexPatches.MemoryPatch("libunity.so", 0x6649a54, "h000080D2C0035FD6", 32)
+gg.toast("ғᴀsᴛ sᴡɪᴍ : ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+function noflash()
+HexPatches.MemoryPatch("libunity.so", 0x8407788, "h00 2C 40 BC C0 03 5F D6", 32)
+gg.toast("ɴᴏ ꜰʟᴀꜱʜʙᴀɴɢ : ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+function unliammo()
+HexPatches.MemoryPatch("libunity.so", 0x9863f4c, "h00008052C0035FD6", 32)
+gg.toast("ᴜɴʟɪ ᴀᴍᴍᴏ ᴀᴄᴛɪᴀᴛᴇᴅ")
+end
+
+function parachute()
+HexPatches.MemoryPatch("libunity.so", 0x8fb9a90, "h0010201EC0035FD6", 32)
+gg.toast("ꜰᴀꜱᴛ ᴘᴀʀᴀᴄʜᴜᴛᴇ : ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+function underwater()
+local so = gg.getRangesList('libunity.so')[1].start 
+local py = 0x6500f9c 
+gg.setValues({{address = so + py, flags = gg.TYPE_QWORD, value = "h200080D2C0035FD6"}})
+local so = gg.getRangesList('libunity.so')[1].start 
+local py = 0x651d6e0
+gg.setValues({{address = so + py, flags = gg.TYPE_QWORD, value = "h200080D2C0035FD6"}})
+local so = gg.getRangesList('libunity.so')[1].start 
+local py = 0x664b520 
+gg.setValues({{address = so + py, flags = gg.TYPE_QWORD, value = "h200080D2C0035FD6"}})
+gg.toast("ᴡᴀʟᴋ ᴜɴᴅᴇʀ ᴡᴀᴛᴇʀ : ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+ end
+ 
+
+function nosm()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("300000045", gg.TYPE_DWORD)
+gg.refineNumber("300000045", 4)
+var = gg.getResults(9999)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("300000065", gg.TYPE_DWORD)
+gg.refineNumber("300000065", 4)
+var = gg.getResults(9999)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("300000090", gg.TYPE_DWORD)
+gg.refineNumber("300000090", 4)
+var = gg.getResults(9999)
+gg.editAll("0", gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast("ɴᴏ sᴍᴏᴋᴇ: : ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+
+function nospread()
+HexPatches.MemoryPatch("libunity.so", 0x85ba160, "h00 00 80 D2 C0 03 5F D6", 32)
+gg.toast("ɴᴏ sᴘʀᴇᴀᴅ: ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+
+function speed()
+gg.setRanges(gg.REGION_ANONYMOUS)
+V=gg.prompt({"🏃??sᴇᴛ sᴘᴇᴇᴅ ᴛᴏ🏃🏻‍♀[6;20]"},{Y},{"number"}) 
+for i = 1,5 do gg.sleep(100) gg.setVisible(false) gg.toast("Starting SpeedHack: "..V[1]) end
+if V[2] == true then
+gg.searchNumber("4.28000020981;3.20000004768", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+else
+gg.searchNumber("4.28000020981;3.20000004768", gg.TYPE_FLOAT)
+gg.refineNumber("4.28000020981;3.20000004768", gg.TYPE_FLOAT)
+end
+-------------------------------(NoLag_Test)------------------------
+speedmenubar=tonumber(V[1]) 
+---------------------------------------------------------------------------
+if speedmenubar == 6 then
+gg.getResults(999)
+gg.editAll("6", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 7 then
+gg.getResults(999)
+gg.editAll("7", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 8 then
+gg.getResults(999)
+gg.editAll("8", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 9 then
+gg.getResults(999)
+gg.editAll("9", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 10 then
+gg.getResults(999)
+gg.editAll("10", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 11 then
+gg.getResults(999)
+gg.editAll("11", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 12 then
+gg.getResults(999)
+gg.editAll("12", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 13 then
+gg.getResults(999)
+gg.editAll("13", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 14 then
+gg.getResults(999)
+gg.editAll("14", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 15 then
+gg.getResults(999)
+gg.editAll("15", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 16 then
+gg.getResults(999)
+gg.editAll("16", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 17 then
+gg.getResults(999)
+gg.editAll("17", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 18 then
+gg.getResults(999)
+gg.editAll("18", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 19 then
+gg.getResults(999)
+gg.editAll("19", gg.TYPE_FLOAT)
+gg.clearResults()
+else
+end
+if speedmenubar == 20 then
+gg.getResults(999)
+gg.editAll("20", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("Speed Hack ✔️")
+end
+end
+
+function fastreload()
+local il2cpp = gg.getRangesList('libunity.so')[1].start 
+Fastreload1 = 0x857bc6c
+Fastreload2 = 0x857bd78
+Fastreload3 = 0x98643f0
+Fastreload4 = 0x986454c
+Fastreload5 = 0x98646a8
+Fastreload6 = 0x9864804
+Fastreload7 = 0x9864960
+setValues(il2cpp + Fastreload1, 4, "~A8 LDR  S0, [PC,#0x8]")
+setValues(il2cpp + Fastreload1 + 0x4, 4, "~A8 RET")
+setValues(il2cpp + Fastreload1 + 0x8, 16, 0.00001)
+setValues(il2cpp + Fastreload2, 4, "~A8 LDR  S0, [PC,#0x8]")
+setValues(il2cpp + Fastreload2 + 0x4, 4, "~A8 RET")
+setValues(il2cpp + Fastreload2 + 0x8, 16, 0.00001)
+setValues(il2cpp + Fastreload3, 4, "~A8 LDR  S0, [PC,#0x8]")
+setValues(il2cpp + Fastreload3 + 0x4, 4, "~A8 RET")
+setValues(il2cpp + Fastreload3 + 0x8, 16, 0.00001)
+setValues(il2cpp + Fastreload4, 4, "~A8 LDR  S0, [PC,#0x8]")
+setValues(il2cpp + Fastreload4 + 0x4, 4, "~A8 RET")
+setValues(il2cpp + Fastreload4 + 0x8, 16, 0.00001)
+setValues(il2cpp + Fastreload5, 4, "~A8 LDR  S0, [PC,#0x8]")
+setValues(il2cpp + Fastreload5 + 0x4, 4, "~A8 RET")
+setValues(il2cpp + Fastreload5 + 0x8, 16, 0.00001)
+setValues(il2cpp + Fastreload6, 4, "~A8 LDR  S0, [PC,#0x8]")
+setValues(il2cpp + Fastreload6 + 0x4, 4, "~A8 RET")
+setValues(il2cpp + Fastreload6 + 0x8, 16, 0.00001)
+setValues(il2cpp + Fastreload7, 4, "~A8 LDR  S0, [PC,#0x8]")
+setValues(il2cpp + Fastreload7 + 0x4, 4, "~A8 RET")
+setValues(il2cpp + Fastreload7 + 0x8, 16, 0.00001)
+gg.toast("Fast Reload: ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+function highpump()
+so = gg.getRangesList('libunity.so')[1].start 
+py = 0x72be95c
+setValues(so + py, 32, "h 20 00 80 D2 C0 03 5F D6")
+gg.toast("ᴘᴜᴍᴘ + ᴊᴜᴍᴘ ʙᴏᴏsᴛ : ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+function longex() 
+HexPatches.MemoryPatch("libunity.so", 0x541a49c, "h20 00 80 D2 C0 03 5F D6", 32)
+      HexPatches.MemoryPatch("libunity.so", 0x541679c, "h00 00 80 D2 C0 03 5F D6", 32)
+      HexPatches.MemoryPatch("libunity.so", 0x7289b78, "h20 00 80 D2 C0 03 5F D6", 32)
+      HexPatches.MemoryPatch("libunity.so", 0x54199fc, "h00 00 80 D2 C0 03 5F D6", 32)
+    gg.toast(" Long Execution enable: hard") 
+  end
+  
+  function longexe()
+so = gg.getRangesList('libunity.so')[1].start -----[[© Dec By メㅤJᴜʟʟㅤ4Yᴏᴜ 亗 ]] -----
+py = 0x541a49c
+setValues(so + py, 32, "h20 00 80 D2 C0 03 5F D6")
+gg.toast("ʟᴏɴɢ ᴇxᴇᴄᴜᴛᴇ : ᴀᴄᴛɪᴠᴀᴛᴇᴅ")
+end
+
+  
+
+  
+function slide()
+function split(szFullString, szSeparator) local nFindStartIndex = 1 local nSplitIndex = 1 local nSplitArray = {} while true do local nFindLastIndex = string.find(szFullString, szSeparator, nFindStartIndex) if not nFindLastIndex then nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, string.len(szFullString)) break end nSplitArray[nSplitIndex] = string.sub(szFullString, nFindStartIndex, nFindLastIndex - 1) nFindStartIndex = nFindLastIndex + string.len(szSeparator) nSplitIndex = nSplitIndex + 1 end return nSplitArray end function xgxc(szpy, qmxg) for x = 1, #(qmxg) do xgpy = szpy + qmxg[x]["offset"] xglx = qmxg[x]["type"] xgsz = qmxg[x]["value"] xgdj = qmxg[x]["freeze"] if xgdj == nil or xgdj == "" then gg.setValues({[1] = {address = xgpy, flags = xglx, value = xgsz}}) else gg.addListItems({[1] = {address = xgpy, flags = xglx, freeze = xgdj, value = xgsz}}) end xgsl = xgsl + 1 xgjg = true end end function xqmnb(qmnb) gg.clearResults() gg.setVisible(false) gg.setRanges(qmnb[1]["memory"]) gg.searchNumber(qmnb[3]["value"], qmnb[3]["type"]) if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. " Failed") else gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) gg.refineNumber(qmnb[3]["value"], qmnb[3]["type"]) xxx=gg.getResultCount() if gg.getResultCount() == 0 then gg.toast(qmnb[2]["name"] .. " Failed") else sl = gg.getResults(999999) sz = gg.getResultCount() xgsl = 0 if sz > 999999 then sz = 999999 end for i = 1, sz do pdsz = true for v = 4, #(qmnb) do if pdsz == true then pysz = {} pysz[1] = {} pysz[1].address = sl[i].address + qmnb[v]["offset"] pysz[1].flags = qmnb[v]["type"] szpy = gg.getValues(pysz) pdpd = qmnb[v]["lv"] .. ";" .. szpy[1].value szpd = split(pdpd, ";") tzszpd = szpd[1] pyszpd = szpd[2] if tzszpd == pyszpd then pdjg = true pdsz = true else pdjg = false pdsz = false end end end if pdjg == true then szpy = sl[i].address xgxc(szpy, qmxg) end end if xgjg == true then gg.toast(qmnb[2]["name"] .. "\nDont Copy Pase"..xxx.." You r shit : " .. xgsl .. "") else gg.toast(qmnb[2]["name"] .. " Failed") end end end gg.clearResults()  end
+gg.setVisible(false)
+qmnb = {{["memory"] = 32},{["name"] = "4"}, {["value"] = 30.0, ["type"] = 16},{["lv"] = 60.0, ["offset"] = -44, ["type"] = 16}, {["lv"] = 15.0, ["offset"] = -48, ["type"] = 16},}qmxg = {{["value"] = 100, ["offset"] = -4, ["type"] = 16},}xqmnb(qmnb)
+gg.toast("Infinite Slide On")
+end
+
+
+
+
+
+function jump () 
+pepe = gg.multiChoice({
+"High Jump MP",
+"High Jump BR",
+"Back",
+})
+if pepe == nil then return end
+gg.setVisible(false)
+
+if pepe[1] == true then MP() end
+if pepe[2] == true then BR() end
+if pepe[3] == true then home() end
+end
+	
+function MP()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("7.5;0.8::5",gg.POINTER_WRITABLE)
+gg.refineNumber("0.8", 16)
+var = gg.getResults(9999)
+gg.editAll("4",gg.POINTER_WRITABLE)
+gg.clearResults()
+gg.toast(" Jump MP Active")
+end
+	
+function BR()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("1,065,353,216;1,069,547,520;1,050,253,722:9",gg.TYPE_DWORD)
+gg.refineNumber("1,065,353,216", 4)
+var = gg.getResults(9999)
+gg.editAll("1,082,130,432",gg.TYPE_DWORD)
+gg.clearResults()
+gg.toast(" Jump BR Active")
+end
+
+function highpov()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("44.0;44.0;60.0;45.0;0.20000000298:33", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("44", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(950)
+gg.editAll("98", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast('High Fov✔️')
+end
+
+
+function noshake() 
+HexPatches.MemoryPatch("libunity.so",  0x83b5234, "h01 00 80 D2 C0 03 5F D6", 32)
+gg.toast("No Shake ✔️")
+end
+
+
+
+function boost() 
+local bembang = gg.multiChoice({ 
+	" 𝐀𝐧𝐭𝐢 𝐅𝐩𝐬 𝐃𝐫𝐨𝐩 [ 𝐀𝐟𝐭𝐞𝐫 𝐋𝐨𝐠𝐢𝐧 ]",
+	"𝐌𝐚𝐱 𝐅𝐫𝐚𝐦𝐞𝐑𝐚𝐭𝐞", 
+	" 𝐒𝐦𝐨𝐨𝐭𝐡 𝐅𝐩𝐬", 
+	"𝐁𝐚𝐜𝐤", 
+}, nil,  "𝐆𝐚𝐫𝐞𝐧𝐚 𝐁𝐨𝐨𝐬𝐭𝐞𝐫 𝐑𝐞𝐦𝐨𝐝 𝐛𝐲: VELLIXAO")
+    if bembang == nil then return end
+    gg.setVisible(false)
+    
+    if bembang[1] == true then antifps() end
+    if bembang[2] == true then frame() end
+    if bembang[3] == true then FPS() end
+    if bembang[4] == true then home() end
+end
+
+
+function antifps()
+so = gg.getRangesList('libunity.so')[1].start -----[[© Leak By メㅤJᴜʟʟㅤ4Yᴏᴜ 亗 ]] -----
+py = 0x84b9f68
+setValues(so + py, 32, "h200080D2C0035FD6")
+so = gg.getRangesList('libunity.so')[1].start -----[[© Leak By メㅤJᴜʟʟㅤ4Yᴏᴜ 亗 ]] -----
+py = 0x84a7b4c
+setValues(so + py, 32, "h200080D2C0035FD6")
+gg.toast("𝘼𝙣𝙩𝙞 𝙁𝙥𝙨 𝘿𝙧𝙤𝙥")
+end
+
+function frame()
+HexPatches.MemoryPatch("libunity.so", 0x84a4138, "hC0 03 5F D6 C0 03 5F D6", 32)
+gg.toast("𝙈𝘼𝙓 𝙁𝙍𝘼𝙈𝙀 𝙍𝘼𝙏𝙀")
+end
+
+function FPS()
+so = gg.getRangesList('libunity.so')[1].start -----[[© Leak By メㅤJᴜʟʟㅤ4Yᴏᴜ 亗 ]] -----
+py = 0x84a4138
+setValues(so + py, 32, "h002480D2C0035FD6")
+gg.toast("𝙁𝙋𝙎 𝙇𝙊𝘾𝙆 120")
+end
+
+
+function uav()
+HexPatches.MemoryPatch("libunity.so", 0x544e174, "h20 00 80 D2 C0 03 5F D6", 32)
+gg.toast("Advance Uav enable")
+end
+
+function curve() 
+HexPatches.MemoryPatch("libunity.so", 0x83e9060, "h20 00 80 D2 C0 03 5F D6", 32)
+HexPatches.MemoryPatch("libunity.so", 0x83e9068, "h00 24 80 D2 C0 03 5F D6", 32)
+gg.toast("Pov Curve enable")
+end
+
+
+function sniper()
+aim = gg.multiChoice({
+"ᴀɪᴍʙᴏᴛ sᴜᴘᴘᴏʀᴛ sɴɪᴘᴇʀ ʙʀᴜᴛᴀʟ [ ᴀᴄᴛɪᴠᴀᴛᴇ ᴇᴠᴇʀʏ ɢᴀᴍᴇ ]",
+"ᴀɪᴍʙᴏᴛ sᴜᴘᴘᴏʀᴛ sɴɪᴘᴇʀ ɴᴏʀᴍᴀʟ [ ᴀᴄᴛɪᴠᴀᴛᴇ ᴇᴠᴇʀʏ ɪɴɢᴀᴍᴇ ]",
+"ᴀɪᴍ ᴀꜱꜱɪꜱᴛ ᴏɴʟʏ [ ᴍᴀɪɴ ʟᴏʙʙʏ ᴀᴄᴛɪᴠᴀᴛɪᴏɴ ]",
+"ᴄᴀɴꜱᴇʟ",
+})
+if aim == nil then
+gg.setVisible(false)
+else
+if aim[1] == true then aimhead1() end
+if aim[2] == true then aimbody2() end
+if aim[3] == true then aimbody3() end
+if aim == nil then cancel() end
+end
+end
+	
+function aimhead1()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.45", gg.TYPE_FLOAT)
+gg.getResults(100000)
+gg.editAll("1.0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.44999998808", gg.TYPE_FLOAT)
+gg.getResults(100000)
+gg.editAll("1.0", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("0.1439999938", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.getResults(100000)
+gg.editAll("3", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("7.00649232e-45F;0.69999998808F;0.69999998808F;0.69999998808F;0.69999998808F;7.00649232e-45F;0.5F;0.5F;0.5F;0.60000002384F;0.60000002384F", gg.TYPE_FLOAT)
+gg.refineNumber("0.5;0.69999998808", gg. TYPE_FLOAT)
+revert = gg.getResults(100000, nil, nil, nil, nil, nil, nil, nil, nil)
+gg.editAll("350", gg.TYPE_FLOAT)
+gg.clearResults()
+gg.toast("ᴇᴠᴇʀʏ ꜱᴡɪᴛᴄʜ ʏᴏᴜʀ ɢᴜɴꜱ ᴀᴄᴛɪᴠᴀᴛᴇ ɪᴛ")
+end
+	
+function aimbody2()
+gg.setRanges(32)
+gg.searchNumber("4294967296Q;1D;4294967296Q;1D;4294967296Q;1D;0.1~0.9F;100~200D:312", 32)
+gg.refineNumber("4294967296", 32)
+t = gg.getResults(100000)
+for i, v in ipairs(t) do
+v.address = v.address + 4
+v.flags = 4
+end
+gg.loadResults(t)
+gg.getResults(100000)
+gg.refineNumber("1", 4)
+t2 = gg.getResults(100000)
+for i, v in ipairs(t2) do
+v.address = v.address + 8
+v.flags = 16
+end
+gg.loadResults(t2)
+gg.refineNumber("0.3~0.9", 16)
+gg.getResults(100000)
+gg.editAll("1", 16)
+gg.clearResults()
+gg.toast("ᴇᴠᴇʀʏ ꜱᴡɪᴛᴄʜ ʏᴏᴜʀ ɢᴜɴꜱ ᴀᴄᴛɪᴠᴀᴛᴇ ɪᴛ")
+end
+
+
+function spectator()
+spect = gg.multiChoice({ 
+"• 𝐒𝐩𝐞𝐜𝐭𝐚𝐭𝐨𝐫 [𝐎𝐧]", 
+"• 𝐒𝐩𝐞𝐜𝐭𝐚𝐭𝐨𝐫 [𝐎𝐟𝐟]", 
+"• ʙᴀᴄᴋ", 
+}) 
+if spect == nil then 
+gg.setVisible(false) 
+else 
+if spect[1] == true then on() end 
+if spect[2] == true then off() end 
+if spect == nil then cancel() end 
+end 
+end 
+  
+function on() 
+so = gg.getRangesList('libunity.so')[1].start 
+py = 0x71e6f9c
+setValues(so + py, 32, "h200080D2C0035FD6") 
+gg.toast("𝐎𝐧 𝐒𝐩????𝐭𝐚𝐭𝐨𝐫 𝐓𝐚𝐠𝐬") 
+end 
+ 
+function off() 
+so = gg.getRangesList('libunity.so')[1].start 
+py = 0x71e6f9c 
+setValues(so + py, 32, -6268592875603357709) 
+gg.toast("𝐎𝐟𝐟 𝐒??𝐞𝐜𝐭𝐚𝐭𝐨𝐫 𝐓𝐚𝐠𝐬") 
+end
+
+function blacksky()
+gg.setRanges(gg.REGION_C_ALLOC | gg.REGION_OTHER)
+gg.searchNumber("2.25;2.25002574921;1.46940157e-39",gg.POINTER_WRITABLE)
+gg.refineNumber("2.25", 16, false, 536870912, 0, -1)
+var = gg.getResults(1000)
+gg.editAll("0",gg.POINTER_WRITABLE)gg.clearResults()
+gg.toast("Black Sky")
+end
+
+function wallshot() 
+    gg.setRanges(gg.REGION_C_BSS)
+    gg.searchNumber("2", gg.TYPE_FLOAT)
+    gg.getResults(9)
+    gg.editAll("-9999999", gg.TYPE_FLOAT)
+    gg.clearResults()
+    gg.toast("WallShot Enabled!")
+end
+
+
+function longslide() 
+local Lib = gg.getRangesList("libunity.so")
+so = gg.getRangesList('libunity.so')[1].start -----[[© Leak By メㅤJᴜʟʟㅤ4Yᴏᴜ 亗 ]] -----
+py = 0x8fd7c78
+setValues(so + py, 4, "~A8 LDR	 S0, [PC,#0x8]")
+so = gg.getRangesList('libunity.so')[1].start -----[[© Leak By メㅤJᴜʟʟㅤ4Yᴏᴜ 亗 ]] -----
+py = 0x8fd7c78+0x4
+setValues(so + py, 4, "~A8 RET")
+so = gg.getRangesList('libunity.so')[1].start -----[[© Leak By メㅤJᴜʟʟㅤ4Yᴏᴜ 亗 ]] -----
+py = 0x8fd7c78+0x8
+setValues(so + py, 16, 1000)
+gg.toast("Long Slide: enable")
+end
+
+
+
+
+
+function EXIT()
+    gg.alert("©Hack\n©YouTube : VELLIX_AO\n©Fb: Kurol watu\n©Subscribe Channel Free")
+print("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⢛⡛⠿⠛⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⣿⣿⣿⣿⡿⠟⡉⣡⡖⠘⢗⣀⣀⡀⢢⣐⣤⣉⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⣿⣿⡿⠉⣠⣲⣾⡭⣀⢟⣩⣶⣶⡦⠈⣿⣿⣿⣷⣖⠍⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⣿⡛⢀⠚⢩⠍⠀⠀⠡⠾⠿⣋⡥⠀⣤⠈⢷⠹⣿⣎⢳⣶⡘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⡏⢀⡤⠉⠀⠀⠀⣴⠆⠠⠾⠋⠁⣼⡿⢰⣸⣇⢿⣿⡎⣿⡷⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⠀⢸⢧⠁⠀⠀⢸⠇⢐⣂⣠⡴⠶⣮⢡⣿⢃⡟⡘⣿⣿⢸⣷⡀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣯⢀⡏⡾⢠⣿⣶⠏⣦⢀⠈⠉⡙⢻⡏⣾⡏⣼⠇⢳⣿⡇⣼⡿⡁⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⠈⡇⡇⡘⢏⡃⠀⢿⣶⣿⣷⣿⣿⣿⡘⡸⠇⠌⣾⢏⡼⣿⠇⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⡀⠀⢇⠃⢢⡙⣜⣾⣿⣿⣿⣿⣿⣿⣧⣦⣄⡚⣡⡾⣣⠏⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⣷⡀⡀⠃⠸⣧⠘⢿⣿⣿⣿⣿⣿⣻⣿⣿⣿⣿⠃⠘⠁⢈⣤⡀⣬⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⣿⣇⣅⠀⠀⠸⠀⣦⡙⢿⣿⣿⣿⣿⣿⣿⡿⠃⢀⣴⣿⣿⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⡿⢛⣉⣉⣀⡀⠀⢸⣿⣿⣷⣬⣛⠛⢛⣩⣵⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⢋⣴⣿⣿⣿⣿⣿⣦⣬⣛⣻⠿⢿⣿⡇⠈⠙⢛⣛⣩⣭⣭⣝⡛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⡇⣼⣿⣿⣿⣿⣿⡿⡹⢿⣿⣽⣭⣭⣭⣄⣙⠻⢿⣿⡿⣝⣛⣛⡻⢆⠙⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⢥⣿⣿⣿⣿⣿⣿⢇⣴⣿⣿⣿⣿⣿⡿⣿⣿⣿⣷⣌⢻⣿⣿⣿⣿⣿⣷⣶⣌⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⡆⣿⣿⣿⣿⣿⡟⣸⣿⡿⣿⣿⣿⣿⣄⣸⣿⣿⣿⣿⣦⢻⣿⣿⣿⣿⣿⣿⣿⡓⠎⠻⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⠸⣿⣿⣿⣿⡇⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣄⢻⣿⣿⣿⣿⡸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⠈⣿⣿⣿⣿⣷⢙⠿⣿⣿⣿⣿⣿⣿⣿⠿⣟⣩⣴⣷⣌⠻⣿⣿⣿⣿⣿⣿⡟⢠⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣆⢻⣿⣿⣿⣿⡇⣷⣶⣭⣭⣭⣵⣶⣾⣿⣿⣿⣿⣿⣿⣷⣌⠹⢿⣿⡿⢋⣠⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⡚⣿⣿⣿⣿⡇⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⢀⣤⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⡇⢻⣿⣿⣿⡇⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣻⣿⣿⣷⠈⣿⣿⣿⣿⢆⠀⢋⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣿⣿⣤⡘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⣿⠀⣻⣿⣿⣿⠀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣎⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⣿⣒⣻⣿⣿⢏⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⢻⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⣿⣇⢹⣿⡏⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣬⡻⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⣿⣿⡄⠻⢱⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣝⢎⢻⣿⣿⣿")
+print("⣿⣿⣿⣿⣿⣷⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣿⣿⣾⣦⢻⣿⣿")
+print("⣿⣿⣿⣿⣿⡇⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣼⣿⣿⣿⣿⣆⢻⣿")
+print("⣿⣿⣿⣿⡿⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⡙⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣰⣿⣿⣿⣿⣿⣿⣆⣿")
+print("⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⢿⣿⣿⣿⣿⣿⣿⣿⢡⣿⣿⣿⣿⣿⣿⣿⣿⡌")
+print("⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣝⢿⣿⣿⣿⣿⡿⢸⣿⣿⣿⣿⣿⣿⣿⣿⡇")
+print("⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⢻⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷")
+print("⣿⣿⣿⣿⣧⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⢹⡿⠁⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⣿⣿⡌⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⢰⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+print("⣿⣿⣿⣿⣿⣷⡘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡌⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿")
+
+    running = false
+end
+
+running = true
+
+while running do
+    if gg.isVisible(true) then
+        TEMPLATE = 1
+        gg.setVisible(false)
+    end
+
+    if TEMPLATE == 1 then
+        home()
+        TEMPLATE = -1
+    end
+end
