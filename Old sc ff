@@ -1,0 +1,89 @@
+gg.setVisible(false)
+gg.alert("©Hack\n©YouTube : VELLIX_AO\n©Fb: Kurol watu\n©Subscribe Channel Free")
+
+gg.setVisible(false)
+gg.choice({ 
+	[1] = 'âž¤Fast Switch: [ðŸ”´OFF]',
+	[2] = 'âž¤Antenna Neck: [ðŸ”´OFF]',
+	[3] = 'âž¤AWM Aimbot: [ðŸ”´OFF]',
+	[4] = 'âž¤Joystick Speed x3: [ðŸ”´OFF]',
+	[5] = 'âž¤Invisible Gloo Wall: [ðŸ”´OFF]',
+	[6] = 'ðŸŽ¯Exit Script',
+}, nil, ": OLD SCRIPT BY VELLIX_AO")
+gg.setRanges(gg.REGION_ANONYMOUS | gg.REGION_CODE_APP)
+gg.searchNumber("h 5C 43 00 00 90 42 00 00 B4 42 96 00 00 00 00 00 00 00 00 00 00 3F 00 00 80 3E", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.getResults(100, 0, 0, -1, "nil", "nil", 0, "nil", 0)
+gg.editAll("h 5c 43 00 00 8c 42 00 00 b4 42 96 00 00 00 00 00 00 00 00 00 00 1a 00 00 80 1c", gg.TYPE_BYTE)
+gg.toast("Fast Switch: ON", false)
+gg.clearResults()
+gg.setVisible(false)
+gg.choice({ -- table(44fad6a)
+	[1] = 'âž¤Fast Switch: [ðŸŸ¢ON]',
+	[2] = 'âž¤Antenna Neck: [ðŸ”´OFF]',
+	[3] = 'âž¤AWM Aimbot: [ðŸ”´OFF]',
+	[4] = 'âž¤Joystick Speed x3: [ðŸ”´OFF]',
+	[5] = 'âž¤Invisible Gloo Wall: [ðŸ”´OFF]',
+	[6] = 'ðŸŽ¯Exit Script',
+}, nil, ": OLD SCRIPT BY VELLIX_AO")
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("h73 6C 20 35 00 00 80 3F", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.getResults(1500, 0, 0, -1, "nil", "nil", 0, "nil", 0)
+gg.editAll("h73 6C 20 35 9A 19 7A 43", gg.TYPE_BYTE)
+gg.toast("Antenna Neck: ON", false)
+gg.clearResults()gg.isVisible()
+gg.setVisible(false)
+gg.choice({ -- table(5080693)
+	[1] = 'âž¤Fast Switch: [ðŸŸ¢ON]',
+	[2] = 'âž¤Antenna Neck: [ðŸŸ¢ON]',
+	[3] = 'âž¤AWM Aimbot: [ðŸ”´OFF]',
+	[4] = 'âž¤Joystick Speed x3: [ðŸ”´OFF]',
+	[5] = 'âž¤Invisible Gloo Wall: [ðŸ”´OFF]',
+	[6] = 'ðŸŽ¯Exit Script',
+}, nil, ": OLD SCRIPT BY VELLIX_AO")
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("h 06 00 00 00 00 00 00 00 00 00 00 00 00 00 F0 41 00 00", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.getResults(50, 0, 0, -1, "nil", "nil", 0, "nil", 0)
+gg.editAll("h 06 00 00 00 00 00 F0 41 00 00 00 00 00 00 00 00 00 00", gg.TYPE_BYTE)
+gg.toast("AWM Aimbot: ON", false)
+gg.clearResults()gg.setVisible(false)
+gg.choice({ -- table(3f9720b)
+	[1] = 'âž¤Fast Switch: [ðŸŸ¢ON]',
+	[2] = 'âž¤Antenna Neck: [ðŸŸ¢ON]',
+	[3] = 'âž¤AWM Aimbot: [ðŸŸ¢ON]',
+	[4] = 'âž¤Joystick Speed x3: [ðŸ”´OFF]',
+	[5] = 'âž¤Invisible Gloo Wall: [ðŸ”´OFF]',
+	[6] = 'ðŸŽ¯Exit Script',
+}, nil, ": OLD SCRIPT BY VELLIX_AO")
+gg.setRanges(gg.REGION_ANONYMOUS)
+gg.searchNumber("2.80259693e-44F ;1.20000004768F;0.18000000715F;1.40129846e-45F", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.refineNumber("1.20000004768", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.getResults(500, 0, 0, -1, "nil", "nil", 0, "nil", 0)
+gg.editAll("100.780", gg.TYPE_FLOAT)
+gg.toast("Joystick Speed x3: ON", false)
+gg.clearResults()
+gg.setVisible(false)
+gg.choice({ -- table(e0afac8)
+	[1] = 'âž¤Fast Switch: [ðŸŸ¢ON]',
+	[2] = 'âž¤Antenna Neck: [ðŸŸ¢ON]',
+	[3] = 'âž¤AWM Aimbot: [ðŸŸ¢ON]',
+	[4] = 'âž¤Joystick Speed x3: [ðŸŸ¢ON]',
+	[5] = 'âž¤Invisible Gloo Wall: [ðŸ”´OFF]',
+	[6] = 'ðŸŽ¯Exit Script',
+}, nil, ": OLD SCRIPT BY VELLIX_AO")
+gg.setRanges(gg.REGION_OTHER)
+gg.searchNumber("h 38 33 64 63 62 65 61 63 36 32 63 37 63 65 35 34 33 38 31 31 62 39 34 37 66 36 66 63 31 32 65 35", gg.TYPE_BYTE, false, gg.SIGN_EQUAL, 0, -1, 0)
+gg.getResults(64, 0, 0, -1, "nil", "nil", 0, "nil", 0)
+gg.editAll("h 66 62 31 34 39 64 30 64 62 38 36 33 30 35 36 34 36 62 31 38 37 64 62 65 34 32 39 64 38 63 32 33", gg.TYPE_BYTE)
+gg.toast("Invisible Gloo Wall: ON", false)
+gg.clearResults()
+gg.isVisible()
+gg.setVisible(false)
+gg.choice({ 
+	[1] = 'âž¤Fast Switch: [ðŸŸ¢ON]',
+	[2] = 'âž¤Antenna Neck: [ðŸŸ¢ON]',
+	[3] = 'âž¤AWM Aimbot: [ðŸŸ¢ON]',
+	[4] = 'âž¤Joystick Speed x3: [ðŸŸ¢ON]',
+	[5] = 'âž¤Invisible Gloo Wall: [ðŸŸ¢ON]',
+	[6] = 'ðŸŽ¯Exit Script',
+}, nil, ": OLD SCRIPT BY VELLIX_AO")
+gg.toast("Script Exited", false)
