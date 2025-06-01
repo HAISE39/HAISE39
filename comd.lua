@@ -1,13 +1,5 @@
 while pcall(load("os.exit()")) or not tostring(os.exit):find("gg%.exit") do  end 
-local GG = {gg.searchNumber,gg.editAll,gg.refineNumber}
-local hook = GG[1] function gg.searchNumber(...)return hook(table.unpack({...}))end 
-local hook = GG[2] function gg.editAll(...)return hook(table.unpack({...}))end 
-local hook = GG[3] function gg.refineNumber(...)return hook(table.unpack({...}))end 
-for k,v in ipairs(GG) do
-while v ~= debug.getinfo(v).func do 
-gg.alert("Mo ngapain?")
-end 
-end
+
 
 local wo,wc = debug.traceback(),debug.traceback()
 local check = {"lua","txt"}
