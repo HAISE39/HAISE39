@@ -434,8 +434,7 @@ gg.toast(" Smooth Aim Assist")
 end
 
 function wallhack()
-
-HexPatches.MemoryPatch("libunity.so", 95869608, "h1F2003D5", 4)
+HexPatches.MemoryPatch("libunity.so", 0x8E5B9A4, "h1F 20 03 D5 E0 03 13 AA", 32);
 gg.toast("ᴡᴀʟʟʜᴀᴄᴋ ɢʟᴏᴡ✓")
 end
 
